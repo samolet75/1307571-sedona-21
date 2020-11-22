@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Седона</title>
+   </head>
+   <body class="page-body">
+      <header class="page-header">
+         <a class="page-header__logo">
+         <img src="img/logmobile.svg" width="101" height="84" alt="Логотип Седона">
+         </a>
+         <nav class="main-nav">
+            <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню
+            </span>
+            </button>
+            <div class="main-nav__wrapper">
+               <ul class="main-nav__list site-list">
+                  <li class="site-list__item">
+                     <a>
+                     Главная
+                     </a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="#">
+                     Фото и Видео
+                     </a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="#">
+                     Форма отзыва
+                     </a>
+                  </li>
+                  <li class="site-list__item">
+                     <a href="#">
+                     HTML ACADEMY
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">Форма отзыва об отдыхе
+          </h1>
+          <section class="reviews">
+            <div class="reviews__wrapper">
+            <div class="container">
+              <header class="reviews__header">
+               <h2 class="reviews__complain">Оставьте свой отзыв
+                 </h2>
+                 <p class="reviews__help">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же посещенных Вами достопримечательностях.
+                 </p>
+                 </header>
+                </div>
+                <div class="reviews__forma">
+                <div class="container">
+                  <form action="https://echo.htmlacademy.ru" method="post">
+                    <fieldset class="reviews__fieldset">
+                    <legend class="reviews__legend">Представьтесь:</legend>
+                  <label class="reviews__label">
+                    Имя:<input class="reviews__name"type="text" placeholder="Петр" required>
+                    </label>
+                    <label class="reviews__label">
+                    Фамилия:<input class="reviews__surname" type="text" placeholder="Иванов" required>
+                  </label>
+                    </fieldset>
+                  </div>
+                 <div class="container">
+                      <fieldset class="reviews__fieldset">
+                        <legend class="reviews__legend">Контактная информация:</legend>
+                         <label class="reviews__label" for="fon">Контактный телефон:</label>
+                        <input class="reviews__telephon reviews__telephon--tube" type="text" placeholder="Введите телефон" id="fon" required>
+                        <label class="reviews__label" for="em">Электронная почта:</label>
+                        <input class="reviews__mail reviews__telephon--envelope"type="text" placeholder="Введите e-mail" id="em" required>
+                       </fieldset>
+                      </div>
+                      <div class="container">
+                        <fieldset class="reviews__fieldset">
+                          <legend class="reviews__legend">Ваше общее впечатление:</legend>
+                         <div class="reviews__general">
+                          <label class="reviews__label" for="positively">Скорее положительное</label>
+                          <input class="reviews__well reviews__well--good" type="radio" name="emotions" value="like" id="positively" checked>
+                          </div>
+                          <div class="reviews__general">
+                          <label class="reviews__label" for="negatively">Скорее отрицательное</label>
+                          <input class="reviews__badly reviews__badly--wicked" type="radio" name="emotions" id="negatively">
+                        </div>
+                        <div class="reviews__general">
+                          <label class="reviews__label" for="complicate">Затрудняюсь ответить</label>
+                          <input class="reviews__notsolve reviews__notsolve--average" type="radio" name="emotions" id="complicate">
+                         </div>
+                        </fieldset>
+                      </div>
+                         <div class="container">
+                          <fieldset class="reviews__fieldset">
+                            <legend class="reviews__legend">Посещенные достопримечательности:</legend>
+                            <div class="reviews__places">
+                            <label class="reviews__label" for="bridges">Мост Дьявола</label>
+                            <input class="reviews__bridge reviews__bridge--devilbridge" type="checkbox" id="bridges" checked>
+                           </div>
+                           <div class="reviews__places">
+                            <label class="reviews__label" for="mountains">Гора-Колокол</label>
+                            <input class="reviews__mountain reviews__mountain--bell" type="checkbox" id="mountains" checked>
+                           </div>
+                           <div class="reviews__places">
+                            <label class="reviews__label" for="slides">Слайд-парк</label>
+                            <input class="reviews__slide reviews__notsolve--park" type="checkbox" id="slides" checked>
+                           </div>
+                           <div class="reviews__places">
+                            <label class="reviews__label" for="rock">Красные скалы</label>
+                            <input class="reviews__redrock reviews__redrock--hillock" type="checkbox" id="rock">
+                          </div>
+                          </fieldset>
+                         </div>
+                           <div class="container">
+                             <p class="reviews__describe">
+                               Опишите свои Эмоции:
+                             </p>
+                             <textarea class="reviews__emo" rows="10">
+                               Опишите подробно все свои восторги
+                             </textarea>
+                           </div>
+                           <div class="container">
+                             <button class="reviews__button" type="submit">
+                               Отправить отзыв
+                             </button>
+                           </div>
+                  </form>
+                </div>
+                </div>
+          </section>
+      </main>
+      <footer class="page-footer">
+        <div class="container">
+        <div class="page-footer__wrapper">
+           <div class="page-footer__social social">
+              <b class="social__title">#visitsedona</b>
+              <ul class="social__list">
+                 <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="#">ВКонтакте
+                    </a>
+                 </li>
+                 <li class="social__item">
+                    <a class="social__link social__link--facebook" href="#">Фейсбук
+                    </a>
+                 </li>
+                 <li class="social__item">
+                    <a class="social__link social__link--instagram" href="#">Инстограм
+                    </a>
+                 </li>
+              </ul>
+           </div>
+        </div>
+        </div>
+     </footer>
+     <div class="notthisway">
+      <div class="container">
+        <h3 class="notthisway__something">
+          Что-то пошло не так!
+        </h3>
+        <p class="otthisway__verify">
+          Проверьте поля, выделенные красным скорее всего Вы забыли их заполнить
+        </p>
+        <a class="button notthisway__button" href="#">
+          ок
+        </a>
+      </div>
+     </div>
+     <div class="shipped">
+      <div class="container">
+        <h3 class="shipped__hasleft">
+          Ваш отзыв отправлен!
+        </h3>
+        <p class="shipped__verify">
+          Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
+        </p>
+        <a class="button shipped__button" href="#">
+         Закрыть окно
+        </a>
+      </div>
+     </div>
+  </body>
+</html>
+
