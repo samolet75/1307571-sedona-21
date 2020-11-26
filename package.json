@@ -4,6 +4,7 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "less": "^3.12.2",
     "stylelint": "13.7.2",
     "stylelint-config-htmlacademy": "0.1.4"
   },
