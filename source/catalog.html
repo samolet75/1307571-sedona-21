@@ -1,155 +1,160 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-   <head>
-      <meta charset="utf-8">
-      <title>HTML Academy: Седона</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <meta name="format-detection" content="telephone=no"/>
-      <link rel="stylesheet" href="css/style.css">
-   </head>
-   <body class="page-body">
-      <header class="page-header">
-         <a class="page-header__logo">
-         <img src="img/logmobile.svg" width="101" height="84" alt="Логотип Седона">
-         </a>
-         <nav class="main-nav">
-            <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню
-            </span>
-            </button>
-            <div class="main-nav__wrapper">
-               <ul class="main-nav__list site-list">
-                  <li class="site-list__item">
-                     <a>
-                     Главная
-                     </a>
-                  </li>
-                  <li class="site-list__item">
-                     <a href="#">
-                     Фото и Видео
-                     </a>
-                  </li>
-                  <li class="site-list__item">
-                     <a href="#">
-                     Форма отзыва
-                     </a>
-                  </li>
-                  <li class="site-list__item">
-                     <a href="#">
-                     HTML ACADEMY
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-      </header>
-      <main class="page-main">
-        <h1 class="visually-hidden">Галерея Фото и Видео
-          </h1>
-          <section class="gallery">
-            <div class="gallery__wrapper">
-          <div class="container">
-            <header class="gallery__header">
-             <h2 class="gallery__video">Фото и Видео
-               </h2>
-               <p class="gallery__foto">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.
-               </p>
-               </header>
-              </div>
-      <div class="gallery-wrapper">
-  <ul class="gallery__list">
-    <li class="gallery__item">
-      <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="фотография дороги на фоне заката">
-      <h3 class="gallery__title">
-Неродные просторы
-      </h3>
-      <p class="gallery__author">
-        Автор фото: Борис
-      </p>
-      <span class="gallery__prise gallery__prise--finger">
-        1350
-      </span>
-    </li>
-    <li class="gallery__item">
-      <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="фотография дороги на фоне заката">
-      <h3 class="gallery__title">
-Местная ростительность
-      </h3>
-      <p class="gallery__author">
-        Автор фото: Сергей
-      </p>
-      <span class="gallery__prise gallery__prise--finger">
-        143
-      </span>
-    </li>
-    <li class="gallery__item">
-      <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="фотография дороги на фоне заката">
-      <h3 class="gallery__title">
-Дорога на север
-      </h3>
-      <p class="gallery__author">
-        Автор фото: Петр
-      </p>
-      <span class="gallery__prise gallery__prise--finger">
-        96
-      </span>
-    </li>
-    <li class="gallery__item">
-      <img class="gallery__image" src="https://via.placeholder.com/150x150" alt="фотография дороги на фоне заката">
-      <h3 class="gallery__title">
-Мост дьявола
-      </h3>
-      <p class="gallery__author">
-        Автор фото: Антон
-      </p>
-      <span class="gallery__prise gallery__prise--finger">
-        254
-      </span>
-    </li>
-  </ul>
-</div>
-</div>
-      </section>
-      <article class="video">
-        <div class="video__wrapper">
-          <div class="container">
-            <h2 class="video__doubt">
-              Всё еще сомневаетесь?
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logmobile.svg" width="101" height="84" alt="Логотип Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню
+        </span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и Видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="visually-hidden">Галерея Фото и Видео
+    </h1>
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <div class="container">
+          <header class="gallery__header">
+            <h2 class="gallery__video">Фото и Видео
             </h2>
-            <p class="video__presentation">
-              Cмотрите видео презентацию, и скорее за билетами, пока они не подорожали в очередной раз!
+            <p class="gallery__foto">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о
+              политике и экономике.
             </p>
-            <video controls preload="metadata">
-              <source src="https://via.placeholder.com/150x150.mp4" type="video/mp4">
-                <source src="https://via.placeholder.com/150x150.ogv" type="video/ogg">
-                <source src="https://via.placeholder.com/150x150.webm" type="video/webm">
-              </video>
-            </div>
+          </header>
         </div>
-      </article>
-      </main>
-      <footer class="page-footer">
-        <div class="page-footer__wrapper">
-           <div class="page-footer__social social">
-              <b class="social__title">#visitsedona</b>
-              <ul class="social__list">
-                 <li class="social__item">
-                    <a class="social__link social__link--vkontakte" href="#">ВКонтакте
-                    </a>
-                 </li>
-                 <li class="social__item">
-                    <a class="social__link social__link--facebook" href="#">Фейсбук
-                    </a>
-                 </li>
-                 <li class="social__item">
-                    <a class="social__link social__link--instagram" href="#">Инстограм
-                    </a>
-                 </li>
-              </ul>
-           </div>
+        <div class="gallery-wrapper">
+          <ul class="gallery__list">
+            <li class="gallery__item">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="фотография дороги на фоне заката">
+              <h3 class="gallery__title">
+                Неродные просторы
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Борис
+              </p>
+              <span class="gallery__prise gallery__prise--finger">
+                1350
+              </span>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="фотография дороги на фоне заката">
+              <h3 class="gallery__title">
+                Местная ростительность
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Сергей
+              </p>
+              <span class="gallery__prise gallery__prise--finger">
+                143
+              </span>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="фотография дороги на фоне заката">
+              <h3 class="gallery__title">
+                Дорога на север
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Петр
+              </p>
+              <span class="gallery__prise gallery__prise--finger">
+                96
+              </span>
+            </li>
+            <li class="gallery__item">
+              <img class="gallery__image" src="https://via.placeholder.com/150x150"
+                alt="фотография дороги на фоне заката">
+              <h3 class="gallery__title">
+                Мост дьявола
+              </h3>
+              <p class="gallery__author">
+                Автор фото: Антон
+              </p>
+              <span class="gallery__prise gallery__prise--finger">
+                254
+              </span>
+            </li>
+          </ul>
         </div>
-     </footer>
-  </body>
+      </div>
+    </section>
+    <article class="video">
+      <div class="video__wrapper">
+        <div class="container">
+          <h2 class="video__doubt">
+            Всё еще сомневаетесь?
+          </h2>
+          <p class="video__presentation">
+            Cмотрите видео презентацию, и скорее за билетами, пока они не подорожали в очередной раз!
+          </p>
+          <video controls preload="metadata">
+            <source src="https://via.placeholder.com/150x150.mp4" type="video/mp4">
+            <source src="https://via.placeholder.com/150x150.ogv" type="video/ogg">
+            <source src="https://via.placeholder.com/150x150.webm" type="video/webm">
+          </video>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__social social">
+        <b class="social__title">#visitsedona</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="#">ВКонтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Фейсбук
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">Инстограм
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
-
-
-
