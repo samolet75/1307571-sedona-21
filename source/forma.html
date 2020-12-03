@@ -50,38 +50,37 @@
     <h1 class="visually-hidden">Форма отзыва об отдыхе
     </h1>
     <section class="reviews">
-        <div class="container">
-          <header class="reviews__header">
+        <header class="reviews__header">
             <h2 class="reviews__complain">Оставьте свой отзыв
             </h2>
             <p class="reviews__help">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же посещенных Вами
               достопримечательностях.
             </p>
           </header>
-        </div>
-        <div class="reviews__forma">
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <div class="reviews__middlename">
-              <fieldset class="reviews__introducemyself">
-                <legend class="reviews__legend">Представьтесь:</legend>
-                <label class="reviews__tease">
-                  Имя:<input class="reviews__name" type="text" placeholder="Петр" required>
-                </label>
-                <label class="reviews__label">
-                  Фамилия:<input class="reviews__surname" type="text" placeholder="Иванов" required>
-                </label>
-              </fieldset>
-          </div>
-          <div class="container">
-            <fieldset class="reviews__fieldset">
-              <legend class="reviews__legend">Контактная информация:</legend>
+            <form class="reviews__forma" action="https://echo.htmlacademy.ru" method="post">
+              <div class="reviews__group">
+              <h3 class="reviews__legend">Представьтесь:</h3>
+                <div class="reviews__subgroup">
+                <label class="reviews__tease" for="petr">Имя*:</label>
+                  <input class="reviews__name" type="text" placeholder="Петр" required id="petr">
+                </div>
+                <div class="reviews__subgroup">
+                <label class="reviews__call" for="ivanov">Фамилия*:</label>
+                <input class="reviews__surname" type="text" placeholder="Иванов" required id="ivanov">
+                </div>
+                <div class="reviews__subgroup">
+                  <label class="reviews__call" for="ivanov">Отчество*:</label>
+                  <input class="reviews__surname" type="text" placeholder="Иванов" required id="ivanov">
+                  </div>
+              </div>
+              <div class="reviews__group">
+              <h3 class="reviews__legend">Контактная информация:</h3>
               <label class="reviews__label" for="fon">Контактный телефон:</label>
               <input class="reviews__telephon reviews__telephon--tube" type="text" placeholder="Введите телефон"
                 id="fon" required>
               <label class="reviews__label" for="em">Электронная почта:</label>
               <input class="reviews__mail reviews__telephon--envelope" type="text" placeholder="Введите e-mail" id="em"
                 required>
-            </fieldset>
           </div>
           <div class="container">
             <fieldset class="reviews__fieldset">
@@ -137,7 +136,6 @@
             </button>
           </div>
           </form>
-        </div>
     </section>
   </main>
   <footer class="page-footer">
