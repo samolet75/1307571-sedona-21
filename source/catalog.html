@@ -50,19 +50,17 @@
     <h1 class="visually-hidden">Галерея Фото и Видео
     </h1>
     <section class="gallery">
-      <div class="gallery__wrapper">
-        <div class="container">
-          <header class="gallery__header">
-            <h2 class="gallery__video">Фото и Видео
+      <header class="gallery__picture">
+         <h2 class="gallery__video">Фото и Видео
             </h2>
             <p class="gallery__foto">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о
               политике и экономике.
             </p>
-          </header>
-        </div>
-        <div class="gallery-wrapper">
+      </header>
+        <div class="gallery-executor">
           <ul class="gallery__list">
             <li class="gallery__item">
+              <div class="gallery__pics">
               <img class="gallery__image" src="https://via.placeholder.com/150x150"
                 alt="фотография дороги на фоне заката">
               <h3 class="gallery__title">
@@ -74,8 +72,10 @@
               <span class="gallery__prise gallery__prise--finger">
                 1350
               </span>
+              </div>
             </li>
             <li class="gallery__item">
+              <div class="gallery__pics">
               <img class="gallery__image" src="https://via.placeholder.com/150x150"
                 alt="фотография дороги на фоне заката">
               <h3 class="gallery__title">
@@ -87,8 +87,10 @@
               <span class="gallery__prise gallery__prise--finger">
                 143
               </span>
+              </div>
             </li>
             <li class="gallery__item">
+              <div class="gallery__pics">
               <img class="gallery__image" src="https://via.placeholder.com/150x150"
                 alt="фотография дороги на фоне заката">
               <h3 class="gallery__title">
@@ -100,8 +102,10 @@
               <span class="gallery__prise gallery__prise--finger">
                 96
               </span>
+              </div>
             </li>
             <li class="gallery__item">
+              <div class="gallery__pics">
               <img class="gallery__image" src="https://via.placeholder.com/150x150"
                 alt="фотография дороги на фоне заката">
               <h3 class="gallery__title">
@@ -113,50 +117,49 @@
               <span class="gallery__prise gallery__prise--finger">
                 254
               </span>
+              </div>
             </li>
           </ul>
         </div>
-      </div>
     </section>
     <article class="video">
-      <div class="video__wrapper">
-        <div class="container">
+      <div class="video__presentation">
           <h2 class="video__doubt">
             Всё еще сомневаетесь?
           </h2>
-          <p class="video__presentation">
+          <p class="video__clip">
             Cмотрите видео презентацию, и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
-          <video controls preload="metadata">
+          <video class="video__video"controls preload="metadata">
             <source src="https://via.placeholder.com/150x150.mp4" type="video/mp4">
             <source src="https://via.placeholder.com/150x150.ogv" type="video/ogg">
             <source src="https://via.placeholder.com/150x150.webm" type="video/webm">
           </video>
         </div>
-      </div>
-    </article>
+      </article>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__social social">
-        <b class="social__title">#visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#">ВКонтакте
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">Фейсбук
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">Инстограм
-            </a>
-          </li>
-        </ul>
+    <div class="page-footer__social social">
+      <a href="#" class="social__title">#visitsedona</a>
+      <ul class="social__list">
+        <li class="social__item social__item--vk">
+          <a class="social__link social__link--vkontakte" href="#">ВКонтакте
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a class="social__link social__link--facebook" href="#">Фейсбук
+          </a>
+        </li>
+        <li class="social__item social__item--im">
+          <a class="social__link social__link--instagram" href="#">Инстограм
+          </a>
+        </li>
+      </ul>
+      <div class="development">
+    <a class="development__link" href="#">Разработано</a>
       </div>
     </div>
-  </footer>
+</footer>
 </body>
 
 </html>
