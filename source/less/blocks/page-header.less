@@ -6,19 +6,21 @@
   padding: 0;
 }
 
-.site-list__item {
-  width: 100%;
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 55px;
-  list-style: none;
-  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
-}
+.site-list {
+  &__item {
+    width: 100%;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 55px;
+    list-style: none;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  }
 
-.site-list__item a {
-  text-decoration: none;
-  color: #ffffff;
+  &__link {
+    text-decoration: none;
+    color: #ffffff;
+  }
 }
 
 .page-header__square {
