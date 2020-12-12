@@ -1,8 +1,13 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-nav__list {
   width: 320px;
   height: 223px;
   text-align: center;
-  background-color: #81b3d2;
+  background-color: @gl-color;
   padding: 0;
 }
 
@@ -28,4 +33,14 @@
   height: 84px;
   background-color: #ffffff;
   text-align: center;
+}
+
+.page-header__logo {
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+}
+
+.main-nav {
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
