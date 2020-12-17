@@ -4,6 +4,20 @@
     height: 162px;
     text-align: center;
     margin: 32px 15px 11px;
+    outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;
+
+    @media (min-width: @tablet-width) {
+      width: 520px;
+      height: 110px;
+      margin: 0 auto;
+      font-size: 21px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 484px;
+      height: 110px;
+    }
   }
 
   &__slogan {
