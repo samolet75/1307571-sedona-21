@@ -3,14 +3,28 @@
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
-  background-color: @pbc-color;
+  background-color: @bg-color;
   color: @text-color;
-
+  margin: 0;
+  padding: 0;
 
   &-body {
     height: 100%;
     background-color: @bg-color;
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-body {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-body {
+    width: 1280px;
+    padding: 0 40px;
   }
 }

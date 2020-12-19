@@ -3,21 +3,7 @@
     width: 285px;
     height: 162px;
     text-align: center;
-    margin: 32px 15px 11px;
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
-
-    @media (min-width: @tablet-width) {
-      width: 520px;
-      height: 110px;
-      margin: 0 auto;
-      font-size: 21px;
-    }
-
-    @media (min-width: @desktop-width) {
-      width: 484px;
-      height: 110px;
-    }
+    margin: 0;
   }
 
   &__slogan {
@@ -26,5 +12,55 @@
 
   &__intro {
     .invitation__intro();
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__big {
+    width: 550px;
+    height: 110px;
+    margin: 0 auto;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__big {
+    width: 550px;
+    height: 110px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__intro {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__intro {
+    font-size: 14px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .invitation__slogan {
+
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invitation__slogan {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
   }
 }
