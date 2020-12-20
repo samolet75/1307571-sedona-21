@@ -3,6 +3,7 @@
   flex-direction: column;
   min-width: 320px;
   margin: 53px 0 0 0;
+  padding: 0;
 
   &__difference {
     display: flex;
@@ -45,13 +46,16 @@
   }
 
   &__area {
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
     height: 503px;
     background-color: #eeeeee;
+    margin: 0 auto;
   }
 
   &__small {
-    width: 268px;
+    min-width: 268px;
     height: 117px;
     text-align: center;
     margin: 26px 26px 50px 26px;
@@ -80,8 +84,6 @@
     width: 768px;
     height: 256px;
     margin: 0 auto;
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
   }
 }
 
@@ -100,7 +102,6 @@
     margin: 0;
     padding-top: 40px;
     box-sizing: border-box;
-    order: 0;
   }
 }
 
@@ -111,7 +112,6 @@
     margin: 0;
     padding-top: 40px;
     box-sizing: border-box;
-    order: 1;
   }
 }
 
@@ -120,6 +120,7 @@
   .advantages__bridge {
     width: 512px;
     height: 256px;
+    margin: 0;
   }
 }
 
@@ -128,11 +129,31 @@
   .advantages__bridge {
     width: 800px;
     height: 256px;
+    margin: 0;
   }
 }
 
 @media (min-width: @tablet-width) {
-  .advantages__bridge {
-    order: 0;
+  .advantages__area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
   }
 }
+
+@media (min-width: @desktop-width) {
+  width: 1200px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__small {
+    display: block;
+    width: 256px;
+    height: 256px;
+    margin: 0;
+    padding-top: 42px;
+  }
+}
+
