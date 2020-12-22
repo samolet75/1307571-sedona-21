@@ -1,18 +1,19 @@
 .page-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 320px;
   height: 233px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   padding: 28.5px;
   padding-left: 0;
+  text-align: center;
 }
 
 .social {
   &__title {
     width: 166px;
     height: 26px;
-    margin: 0 78px 33.5px 76px;
+    margin: 0 auto;
     text-decoration: none;
     color: black;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -57,10 +58,67 @@
 .development__link {
   width: 121px;
   height: 26px;
-  margin: 45px 119px 26px 80px;
+  margin: 0 auto;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-decoration: none;
   color: black;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    width: 768px;
+    align-items: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .social__title {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__title {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .development__link {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .development__link {
+    margin: 0;
+  }
 }
