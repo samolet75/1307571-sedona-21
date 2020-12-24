@@ -1,5 +1,7 @@
 .advice {
-  width: 320px;
+  display: flex;
+  flex-direction: row;
+  min-width: 320px;
   height: 416px;
 
 
@@ -32,5 +34,31 @@
     width: 210px;
     height: 105px;
     margin: 26px 40px 35px 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advice__list {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 701px;
+    height: 113px;
+    margin: 0 auto;
+    margin-top: 158px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advice__list {
+    width: 1200px;
+    height: 113px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advice__live {
+    margin: 0;
   }
 }
