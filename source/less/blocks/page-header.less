@@ -72,13 +72,25 @@
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    width: 768px;
+    width: 685px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
-    width: 1200px;
+    width: 1031px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
   }
 }

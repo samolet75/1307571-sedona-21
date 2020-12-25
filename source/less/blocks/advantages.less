@@ -86,14 +86,17 @@
     min-width: 768px;
     height: 256px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__difference {
-    width: 100%;
+    width: 1200;
     height: 256px;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
@@ -140,16 +143,15 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 768px;
+    width: 675px;
     height: 253px;
-    margin-left: -42px;
-    margin-right: 0;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__area {
-    width: 1160px;
+    width: 1024px;
     height: 256px;
   }
 }
@@ -162,5 +164,17 @@
     margin: 0 auto;
     padding-top: 42px;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 768px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 1200px;
   }
 }
