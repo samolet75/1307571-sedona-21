@@ -72,7 +72,8 @@
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    width: 685px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -91,6 +92,18 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .mine-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mine-nav {
     width: 1200px;
   }
 }

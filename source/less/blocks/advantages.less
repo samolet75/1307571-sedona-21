@@ -94,7 +94,7 @@
   .advantages__difference {
     width: 1200;
     height: 256px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
   }
@@ -143,25 +143,26 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 675px;
+    width: 768px;
     height: 253px;
     margin: 0 auto;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__area {
-    width: 1024px;
+    width: 1200px;
     height: 256px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__small {
-    display: block;
-    width: 600px;
+    width: 256px;
     height: 250px;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 42px;
     box-sizing: border-box;
   }
@@ -169,12 +170,27 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    width: 768px;
+    width: 1200px;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
-    width: 1200px;
+    width: 768px;
+    margin: 0 auto;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .advantages__originality {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__originality {
+    display: inline-block;
+  }
+}
+
