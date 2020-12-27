@@ -356,10 +356,11 @@
 
 @media (min-width: @tablet-width) {
   .reviews__header {
-    width: 435px;
+    width: 500px;
     height: 119px;
     margin: 0 auto;
     margin-bottom: 67px;
+    padding: 0;
   }
 
   .reviews__complain {
@@ -370,11 +371,12 @@
 
 @media (min-width: @desktop-width) {
   .reviews__header {
-    width: 434px;
+    width: 500px;
     height: 107px;
     margin-bottom: 57px;
   }
 }
+
 
 @media (min-width: @tablet-width) {
   .reviews__forma {
@@ -396,40 +398,56 @@
   .reviews__group {
     display: flex;
     flex-direction: column;
-    width: 317px;
+    width: 350px;
     height: 292px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    padding-left: 50px;
+    margin-right: 37px;
     order: 0;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+  }
+
+  .reviews__legend {
+    margin: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__group {
-    width: 474px;
+    width: 470px;
     height: 292px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    margin-right: 120px;
     order: 0;
+    border-left: 1px solid black;
+    padding-left: 79px;
   }
 }
 
+
 @media (min-width: @tablet-width) {
   .reviews__impression {
-    width: 320px;
+    width: 282px;
     height: 292px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 60px;
+    margin-right: 38px;
     order: -1;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__impression {
-    width: 474px;
+    width: 350px;
     height: 292px;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 128px;
+    margin-right: 126px;
     order: -1;
   }
 }
