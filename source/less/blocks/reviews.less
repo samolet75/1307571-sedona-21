@@ -454,9 +454,13 @@
 
 @media (min-width: @tablet-width) {
   .reviews__withus {
+    display: flex;
+    flex-direction: column;
     width: 648px;
     height: 206px;
     margin: 0 auto;
+    padding: 0;
+    border-bottom: none;
   }
 }
 
@@ -465,8 +469,49 @@
     width: 960px;
     height: 181px;
     margin: 0 auto;
+    border-bottom: none;
   }
 }
+
+
+@media (min-width: @tablet-width) {
+  .reviews__talk {
+    width: 648px;
+    height: 45px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .reviews__talk::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    left: -65px;
+    top: -7px;
+  }
+
+  .reviews__talk::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    left: 60px;
+    top: -7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__talk {
+    width: 690px;
+    height: 60;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   .reviews__visit {
@@ -479,7 +524,7 @@
 @media (min-width: @desktop-width) {
   .reviews__visit {
     width: 480px;
-    height: 292px;
+    height: 300px;
     margin: 0 auto;
   }
 }
@@ -487,7 +532,7 @@
 @media (min-width: @tablet-width) {
   .reviews__visit {
     width: 648px;
-    height: 257px;
+    height: 300px;
     margin: 0 auto;
   }
 }
