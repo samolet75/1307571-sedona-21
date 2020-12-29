@@ -457,7 +457,7 @@
     display: flex;
     flex-direction: column;
     width: 648px;
-    height: 206px;
+    height: 245px;
     margin: 0 auto;
     padding: 0;
     border-bottom: none;
@@ -466,8 +466,9 @@
 
 @media (min-width: @desktop-width) {
   .reviews__withus {
+    display: inline-block;
     width: 960px;
-    height: 181px;
+    height: 195px;
     margin: 0 auto;
     border-bottom: none;
   }
@@ -480,6 +481,7 @@
     height: 45px;
     text-align: center;
     margin: 0;
+    margin-bottom: 20px;
   }
 
   .reviews__talk::before {
@@ -506,9 +508,69 @@
 }
 
 @media (min-width: @desktop-width) {
+  .reviews__talk::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 285px;
+    height: 1px;
+    background-color: black;
+    left: -65px;
+    top: -7px;
+  }
+
+  .reviews__talk::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 285px;
+    height: 1px;
+    background-color: black;
+    left: 60px;
+    top: -7px;
+  }
+}
+
+@media (min-width: @desktop-width) {
   .reviews__talk {
-    width: 690px;
+    width: 960px;
     height: 60;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__mail {
+    width: 590px;
+    height: 58px;
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .reviews__telephon {
+    width: 590px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__mail {
+    width: 257px;
+    height: 58px;
+    margin: 0;
+  }
+
+  .reviews__telephon {
+    width: 257px;
+    height: 58px;
+  }
+
+  .reviews__connect {
+    margin: 0;
+  }
+
+  .reviews__electronic {
+    margin: 0;
+    margin-left: 50px;
   }
 }
 
