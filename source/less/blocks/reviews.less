@@ -267,6 +267,8 @@
     border-bottom: 1px solid #e5e5e5;
   }
 
+
+
   &__bridge {
     width: 46px;
     height: 46px;
@@ -577,27 +579,50 @@
 
 @media (min-width: @tablet-width) {
   .reviews__visit {
-    width: 316px;
-    height: 292px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__visit {
-    width: 480px;
-    height: 300px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .reviews__visit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 648px;
     height: 300px;
     margin: 0 auto;
+    text-align: center;
+  }
+
+  .rocks {
+    display: block;
+    width: 258px;
+    height: 53px;
+    margin: 0 auto;
+  }
+
+  .reviews__places {
+    width: 215px;
+    height: 46px;
+  }
+
+  .rocks::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    left: -150px;
+    bottom: -20px;
+  }
+
+  .rocks::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    left: 200px;
+    top: -7px;
   }
 }
+
 
 @media (min-width: @desktop-width) {
   .reviews__visit {
@@ -606,6 +631,7 @@
     margin: 0 auto;
   }
 }
+
 
 @media (min-width: @tablet-width) {
   .reviews__their {
