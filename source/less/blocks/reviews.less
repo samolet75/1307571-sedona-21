@@ -173,7 +173,7 @@
     box-sizing: border-box;
     width: 280px;
     height: 58px;
-    padding: 18px 92px 14px 22px;
+    padding: 18px 70px 14px 22px;
     background-color: #f2f2f2;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bold;
@@ -268,7 +268,6 @@
   }
 
 
-
   &__bridge {
     width: 46px;
     height: 46px;
@@ -331,7 +330,7 @@
   }
 }
 
-.rocks {
+.reviews__rocks {
   display: inline-block;
   width: 268px;
   height: 52px;
@@ -408,6 +407,7 @@
     margin-right: 37px;
     order: 0;
     border-left: 1px solid black;
+    border-bottom: none;
     box-sizing: border-box;
   }
 
@@ -439,6 +439,7 @@
     margin-left: 60px;
     margin-right: 38px;
     order: -1;
+    border: none;
   }
 }
 
@@ -581,45 +582,73 @@
   .reviews__visit {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
+    position: relative;
     width: 648px;
     height: 300px;
     margin: 0 auto;
     text-align: center;
   }
 
-  .rocks {
+  .reviews__rocks {
     display: block;
-    width: 258px;
+    width: 308px;
     height: 53px;
     margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  .reviews__stone {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    margin-bottom: 58px;
   }
 
   .reviews__places {
-    width: 215px;
+    width: 324px;
     height: 46px;
   }
 
-  .rocks::before {
-    content: "";
+  .reviews__mountain--three {
     display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: -150px;
-    bottom: -20px;
+    width: 118.27px;
+    margin: 0;
   }
 
-  .rocks::after {
+  .reviews__mountain--four {
+    display: inline-block;
+    width: 128.59px;
+    margin: 0;
+  }
+
+  .reviews__rocks::before {
     content: "";
     display: inline-block;
     position: relative;
     width: 123px;
     height: 1px;
     background-color: black;
-    left: 200px;
-    top: -7px;
+    left: -260px;
+    bottom: -32px;
+  }
+
+  .reviews__rocks::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 123px;
+    height: 1px;
+    background-color: black;
+    left: 260px;
+    top: -45px;
+  }
+
+  .reviews__bridge {
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -627,9 +656,15 @@
 @media (min-width: @desktop-width) {
   .reviews__visit {
     width: 960px;
-    height: 167px;
+    height: 190px;
     margin: 0 auto;
   }
+
+  .reviews__places {
+    width: 240px;
+    height: 46px;
+  }
+
 }
 
 
@@ -639,6 +674,29 @@
     height: 214px;
     margin: 0 auto;
   }
+
+  .reviews__rocks::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 1px;
+    background-color: black;
+    left: -355px;
+    bottom: -32px;
+  }
+
+  .reviews__rocks::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 1px;
+    background-color: black;
+    left: 330px;
+    top: -45px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
