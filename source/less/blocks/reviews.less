@@ -465,7 +465,7 @@
     margin: 0 auto;
     padding: 0;
     border-bottom: none;
-    top: -100px;
+    top: -30px;
   }
 }
 
@@ -477,7 +477,7 @@
     height: 195px;
     margin: 0 auto;
     border-bottom: none;
-    top: -100px;
+    top: -50px;
   }
 }
 
@@ -593,7 +593,7 @@
     height: 300px;
     margin: 0 auto;
     text-align: center;
-    top: -200px;
+    top: -50px;
   }
 
   .reviews__rocks {
@@ -665,7 +665,7 @@
     width: 960px;
     height: 190px;
     margin: 0 auto;
-    top: -300px;
+    top: -100px;
   }
 
   .reviews__places {
@@ -710,7 +710,7 @@
     width: 123px;
     height: 1px;
     background-color: black;
-    left: -50px;
+    left: -70px;
     bottom: 9px;
   }
 
@@ -721,28 +721,85 @@
     width: 123px;
     height: 1px;
     background-color: black;
-    left: 290px;
-    top: -33px;
+    left: 450px;
+    top: -35px;
   }
 
   .reviews__describe {
-    width: 280px;
-    text-align: center;
+    position: relative;
+    width: 380px;
+    margin: 0 auto;
     margin-bottom: 54px;
+    left: -70px;
   }
 
   .reviews__emo {
     width: 648px;
-    height: 160px;
+    height: 200px;
     margin: 0 auto;
     margin-bottom: 58px;
+    text-overflow: ellipsis;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews__their {
+    position: relative;
     width: 960px;
-    height: 214px;
+    height: 450px;
     margin: 0 auto;
+    top: -10px;
+  }
+
+  .reviews__describe::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 1px;
+    background-color: black;
+    left: -350px;
+    bottom: -20px;
+  }
+
+  .reviews__describe::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    height: 1px;
+    background-color: black;
+    left: 330px;
+    top: -30px;
+  }
+
+  .reviews__describe {
+    position: absolute;
+    width: 280px;
+    top: -100px;
+    right: -100px;
+  }
+
+  .reviews__emo {
+    width: 960px;
+    height: 190px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 58px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__button {
+    width: 324px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__button {
+    width: 480px;
+    height: 58px;
   }
 }
