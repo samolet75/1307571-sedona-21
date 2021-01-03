@@ -56,12 +56,11 @@
   }
 
   &__small {
-    min-width: 268px;
+    min-width: 256px;
     height: 117px;
     text-align: center;
     margin: 26px 26px 50px 26px;
   }
-
 
   &__road {
     width: 237px;
@@ -78,7 +77,6 @@
   }
 }
 
-
 @media (min-width: @tablet-width) {
   .advantages__difference {
     display: flex;
@@ -86,14 +84,17 @@
     min-width: 768px;
     height: 256px;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__difference {
-    width: 100%;
+    width: 1200;
     height: 256px;
     margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
   }
 }
 
@@ -142,25 +143,51 @@
     justify-content: space-between;
     width: 768px;
     height: 253px;
-    margin-left: -42px;
-    margin-right: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    box-sizing: border-box;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__area {
-    width: 1160px;
+    width: 1200px;
     height: 256px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .advantages__small {
-    display: block;
-    width: 600px;
+    width: 220px;
     height: 250px;
     margin: 0 auto;
     padding-top: 42px;
     box-sizing: border-box;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__originality {
+    display: inline-block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__originality {
+    display: inline-block;
   }
 }
