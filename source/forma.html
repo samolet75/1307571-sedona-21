@@ -4,23 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="page-body">
   <header class="page-header">
-    <div class="page-header__square">
-      <a class="page-header__logo" href="#">
-        <img src="img/logmobile.svg" width="101" height="84" alt="Логотип Седона">
-      </a>
-      </div>
+    <a class="page-header__logo" href="#">
+      <img src="img/logmobile.svg" width="101" height="84" alt="Логотип Седона">
+    </a>
     <nav class="main-nav">
-      <button class="main-nav__togle" type="button"><span class="visually-hidden">Открыть меню
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню
         </span>
       </button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link">
@@ -43,7 +38,6 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -100,8 +94,10 @@
               </div>
             </div>
             <div class="reviews__visit">
-              <h3 class="rocks">Посещенные достопримечательности:
-            </h3>
+              <div class="reviews__stone">
+              <h3 class="reviews__rocks">Посещенные достопримечательности:
+              </h3>
+              </div>
               <div class="reviews__places">
                 <input class="reviews__bridge reviews__bridge--devilbridge" type="checkbox" id="bridges" checked>
                 <label class="reviews__mountain" for="bridges">Мост Дьявола
@@ -109,26 +105,25 @@
               </div>
               <div class="reviews__places">
                 <input class="reviews__bridge reviews__mountain--bell" type="checkbox" id="mountains" checked>
-                <label class="reviews__mountain" for="mountains">Гора-Колокол
+                <label class="reviews__mountain reviews__mountain--four" for="mountains">Гора-Колокол
                 </label>
               </div>
-              <div class="reviews__places">
+              <div class="reviews__places reviews__places">
                 <input class="reviews__bridge reviews__notsolve--park" type="checkbox" id="slides" checked>
-                <label class="reviews__mountain" for="slides">Слайд-парк
+                <label class="reviews__mountain reviews__mountain--three" for="slides">Слайд-парк
                 </label>
               </div>
               <div class="reviews__places">
                 <input class="reviews__bridge reviews__redrock--hillock" type="checkbox" id="rock">
-                <label class="reviews__mountain" for="rock">Красные скалы
+                <label class="reviews__mountain reviews__mountain--four" for="rock">Красные скалы
                 </label>
               </div>
-              </div>
+            </div>
           <div class="reviews__their">
             <h3 class="reviews__describe">
               Опишите свои Эмоции:
             </h3>
-            <textarea class="reviews__emo" rows="10" name="text" placeholder="Опишите подробно все свои восторги">
-            </textarea>
+            <textarea class="reviews__emo" rows="10" name="text" placeholder="Опишите подробно все свои восторги"></textarea>
             <button class="reviews__button" type="submit">
               Отправить отзыв
             </button>
@@ -137,28 +132,24 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <a href="#" class="social__title">#visitsedona</a>
-      <ul class="social__list">
-        <li class="social__item social__item--vk">
-          <a class="social__link social__link--vkontakte" href="#">ВКонтакте
-          </a>
-        </li>
-        <li class="social__item social__item--fb">
-          <a class="social__link social__link--facebook" href="#">Фейсбук
-          </a>
-        </li>
-        <li class="social__item social__item--im">
-          <a class="social__link social__link--instagram" href="#">Инстограм
-          </a>
-        </li>
-      </ul>
-      <div class="development">
-    <a class="development__link" href="#">Разработано</a>
-      </div>
-    </div>
+    <a href="#" class="social__title">#visitsedona</a>
+    <ul class="social__list">
+      <li class="social__item social__item--vk">
+        <a class="social__link social__link--vkontakte" href="#">ВКонтакте
+        </a>
+      </li>
+      <li class="social__item social__item--fb">
+        <a class="social__link social__link--facebook" href="#">Фейсбук
+        </a>
+      </li>
+      <li class="social__item social__item--im">
+        <a class="social__link social__link--instagram" href="#">Инстограм
+        </a>
+      </li>
+    </ul>
+  <a class="development__link" href="#">Разработано</a>
 </footer>
-  <div class="notthisway">
+  <div class="notthisway visually-hidden">
     <div class="notthisway">
       <h3 class="notthisway__something">
         Что-то пошло не так!
@@ -171,7 +162,7 @@
         ок
       </a>
   </div>
-  <div class="shipped">
+  <div class="shipped visually-hidden">
     <div class="your">
       <h3 class="shipped__hasleft">
         Ваш отзыв отправлен!

@@ -53,7 +53,6 @@
   outline-offset: -5px;
 }
 
-
 .site-list {
   &__item {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -72,13 +71,38 @@
   .main-nav__list {
     display: flex;
     justify-content: space-between;
-    width: 768px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-nav__list {
-    width: 1200px;
+    width: 1031px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .mine-nav {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .mine-nav {
+    width: 1200px;
   }
 }
