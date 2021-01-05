@@ -234,11 +234,16 @@
     top: -200px;
   }
 
-  .video-video::before {
+  .video__video ::before {
     content: "";
-    position: absolute;
-    z-index: -1;
-    background: url(".../img/rewind.svg")  width="648"   height="93"  no-repeat;
+    width: 648px;
+    height: 93px;
+    position: relative;
+    z-index: 10;
+    background-image: url("../img/rewind.svg");
+    background-repeat: no-repeat;
+    background-size: 648px 93px;
+    background-color: black;
   }
 }
 
