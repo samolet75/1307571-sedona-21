@@ -46,7 +46,7 @@
     left: -20px;
   }
 
-  &__pics {
+  &__item {
     width: 280px;
     height: 414px;
     box-sizing: border-box;
@@ -104,5 +104,264 @@
   &__video {
     width: 320px;
     height: 201px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    width: 648px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .gallery__picture {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 200px;
+  }
+
+  .gallery__foto {
+    width: 500px;
+    display: inline-block;
+  }
+
+  .gallery__video {
+    margin: auto;
+  }
+
+  .gallery__list {
+    display: grid;
+    width: 648px;
+    margin-left: 20px;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 480px 350px 350px;
+  }
+
+  .gallery__item {
+    width: 324px;
+    height: 347px;
+    padding: 0;
+    border: none;
+  }
+
+  .gallery__item--long {
+    width: 648px;
+    height: 480px;
+    padding: 0;
+  }
+
+  .gallery__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .gallery__image--way {
+    width: 648px;
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery__item--flowers {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .gallery__item--spiral {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .gallery__item--split {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .gallery__title {
+    margin: 0;
+    order: 1;
+  }
+
+  .gallery__author {
+    margin: 0;
+    order: 3;
+  }
+
+  .gallery__prise {
+    margin: 0;
+    order: 2;
+    text-align: right;
+  }
+
+  .bathrobe {
+    display: grid;
+    background-color: #eaeaea;
+    height: 80px;
+    margin-top: -6px;
+    padding: 0 20px;
+  }
+
+  .video__header {
+    width: 445px;
+    height: 117px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  .video__video {
+    width: 648px;
+    height: 685px;
+    margin: 0 auto;
+  }
+
+  .video__presentation {
+    position: relative;
+    width: 648px;
+    height: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -200px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .gallery__picture {
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 200px;
+  }
+
+  .gallery__foto {
+    width: 500px;
+    display: inline-block;
+  }
+
+  .gallery__video {
+    margin: auto;
+  }
+
+  .gallery__list {
+    display: grid;
+    width: 1200px;
+    margin-left: 20px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 480px 347px;
+    border: none;
+  }
+
+  .gallery__item {
+    width: 400px;
+    height: 347px;
+    padding: 0;
+    border: none;
+    margin: none;
+  }
+
+  .gallery__item--long {
+    width: 1200px;
+    height: 480px;
+    padding: 0;
+  }
+
+  .gallery__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .gallery__image--way {
+    width: 1200px;
+    height: 400px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery__item--flowers {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .gallery__item--spiral {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .gallery__item--split {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .gallery__title {
+    margin: 0;
+    order: 1;
+  }
+
+  .gallery__author {
+    margin: 0;
+    order: 3;
+  }
+
+  .gallery__prise {
+    margin: 0;
+    order: 2;
+    text-align: right;
+  }
+
+  .bathrobe {
+    display: grid;
+    background-color: #eaeaea;
+    height: 80px;
+    margin-top: -6px;
+    padding: 0 20px;
+  }
+
+  .video__header {
+    width: 445px;
+    height: 117px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 68px;
+  }
+
+  .video__video {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .video__presentation {
+    position: relative;
+    width: 1200px;
+    height: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    top: -700px;
+    text-align: center;
   }
 }
