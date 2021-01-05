@@ -236,9 +236,10 @@
 
   .video-video::before {
     content: "";
-    background-image: url (img/rewind.svg)
-}
-
+    position: absolute;
+    z-index: -1;
+    background: url(".../img/rewind.svg")  width="648"   height="93"  no-repeat;
+  }
 }
 
 @media (min-width: @desktop-width) {
