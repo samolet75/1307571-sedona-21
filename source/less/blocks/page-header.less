@@ -2,20 +2,29 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  &__logo {
+    display: inline-block;
+    width: 320px;
+    height: 56px;
+    background-color: white;
+    text-align: center;
+  }
+
+  &__logo img {
+    background: @pbc-color;
+    width: 101.7px;
+    height: 84px;
+  }
 }
+
+
+
 
 .mainwidth {
   width: 100%;
 }
 
-.page-header__logo {
-  display: inline-block;
-  width: 101.7px;
-  height: 84px;
-  background-color: @bg-color;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
