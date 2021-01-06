@@ -3,22 +3,23 @@
   font-size: 18px;
   line-height: 26px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
-  background-color: @bg-color;
+  background-color: @text-color;
   color: @text-color;
   margin: 0;
   padding: 0;
 
   &-body {
+    min-width: 320px;
     height: 100%;
-    background-color: @bg-color;
-    margin: 0;
-    padding: 0;
+    background-color: @pbc-color;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-body {
-    width: 768px;
+    min-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -26,7 +27,7 @@
 
 @media (min-width: @desktop-width) {
   .page-body {
-    width: 1200px;
+    min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
