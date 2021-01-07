@@ -52,7 +52,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1200px;
+    min-width: 1200px;
   }
 
   &__logo {
@@ -62,9 +62,15 @@
     width: 186.6px;
     height: 96.43px;
     text-align: center;
+    background-image: url("img/vector.svg");
+    background-repeat: no-repeat;
+    background-size: 187px 97px;
+  }
+
+  .page-header__logo img {
+    display: none;
   }
 }
-
 
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
