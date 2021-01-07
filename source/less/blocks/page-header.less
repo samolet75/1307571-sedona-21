@@ -11,6 +11,7 @@
     order: 5;
     padding: 0 35%;
     box-sizing: border-box;
+    margin-bottom: 28px;
   }
 
   &__logo img {
@@ -19,7 +20,7 @@
     background-image: linear-gradient(to top, rgba(231, 229, 229, 1) 0%, rgba(231, 229, 229, 1) 23.5%, rgba(255, 255, 255, 1) 23.5%, rgba(255, 255, 255, 1) 100%);
     width: 102px;
     height: 84px;
-    bottom: -20px;
+    bottom: 10px;
   }
 }
 
@@ -53,21 +54,24 @@
 @media (min-width: @desktop-width) {
   .page-header {
     min-width: 1200px;
-  }
 
-  &__logo img {
-    display: none;
-  }
 
-  &__logo {
-    position: absolute;
-    left: 500px;
-    margin: 0;
-    width: 187px;
-    height: 97px;
-    text-align: center;
-    background: url("img/vector.svg") no-repeat 187px 97px;
-    background-size: 187px 97px;
+    &__logo img {
+      display: none;
+    }
+
+    &__logo {
+      display: block;
+      position: absolute;
+      left: 500px;
+      padding: 0;
+      margin: 0;
+      width: 187px;
+      height: 97px;
+      text-align: center;
+      background: url("../img/vector.svg"), linear-gradient(to top, rgba(231, 229, 229, 0) 0%, rgba(231, 229, 229, 0) 43%, rgba(255, 255, 255, 1) 43%, rgba(255, 255, 255, 1) 100%);
+      background-repeat: no-repeat;
+    }
   }
 }
 
