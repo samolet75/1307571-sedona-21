@@ -37,46 +37,70 @@
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
   display: block;
   width: 70px;
   height: 50px;
   cursor: pointer;
   border: none;
-  background-color: @gl-color;
 }
 
-.main-nav--closed .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 250px;
-  left: 17px;
-  width: 23px;
-  height: 4px;
-  background-color: @gl-color;
-  box-shadow: 0 8px 0 0 @gl-color, 0 16px 0 0 @gl-color;
+.main-nav--closed .main-nav__toggle {
+  top: 65px;
+  right: 0;
+  left: auto;
+  background-color:green;
+
+  &:hover,
+  &:active {
+    background-color: #ffffff;
+  }
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    width: 23px;
+    height: 4px;
+    background-color: black;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
+  }
+
+
+  &:active::before {
+    background-color: fade(#81b3d2, 30%);
+    box-shadow: 0 8px 0 0 fade(#81b3d2, 30%), 0 16px 0 0 fade(#81b3d2, 30%);
+  }
 }
 
-.main-nav--closed .main-nav__toggle:active::before {
-  background-color: fade(#ffffff, 30%);
-  box-shadow: 0 8px 0 0 fade(#ffffff, 30%), 0 16px 0 0 fade(#ffffff, 30%);
+@media (max-width: @mobile-width) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
   top: 0;
   right: 0;
   left: auto;
+  background-color: #81b3d2;
 
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 24px;
+    top: 20px;
     left: 20px;
     width: 28px;
     height: 4px;
     background-color: #ffffff;
-    z-index: 5;
+    z-index: 7;
   }
 
   &::before {
@@ -93,6 +117,7 @@
     background-color: fade(#ffffff, 30%);
   }
 }
+
 
 .main-nav__list {
   padding: 0;
