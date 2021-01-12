@@ -3,6 +3,7 @@
   flex-direction: row;
   min-width: 320px;
   height: 416px;
+  margin-bottom: 35px;
 
   &__list {
     list-style: none;
@@ -10,19 +11,30 @@
     margin: 0;
   }
 
+
   &__title {
     .invitation__slogan();
+    margin-top: 0;
   }
 
   &__description {
     .advantages__features();
+    margin: 0;
   }
 
   &__live {
     width: 240px;
     height: 105px;
-    margin: 35px 11px 26px 69px;
+    margin: 30px 11px 26px 69px;
     text-align: left;
+  }
+
+  &__live--house {
+    margin-top: 35px;
+  }
+
+  &__feed--meal {
+    margin-top: -25px;
   }
 
   &__memory {
