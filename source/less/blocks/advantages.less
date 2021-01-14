@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 471px;
+    height: 451px;
     border-top: 1px solid transparent;
   }
 
@@ -42,9 +42,11 @@
   }
 
   &__count {
+    display: block;
     position: relative;
     .advantages__features();
-    bottom: -10px;
+    bottom: 10px;
+    margin: 20px 0 20px 0;
   }
 
   &__features {
@@ -63,20 +65,24 @@
     flex-direction: column;
     min-width: 320px;
     height: 503px;
-    background-color: #eeeeee;
+    background-color: @bg-color;
     margin-left: auto;
     margin-top: auto;
     list-style: none;
     padding: 0;
   }
 
-  &__small {
-    display: inline-block;
-    min-width: 256px;
-    height: 117px;
+  &___small {
+    display: block;
     text-align: center;
-    margin: -10px 26px 50px 26px;
+    margin: -10px 26px 0 26px;
     box-sizing: border-box;
+    margin-bottom: 24px;
+  }
+
+  &___small--theyard {
+    min-width: 268px;
+    height: 117px;
   }
 
   &__road {
@@ -103,6 +109,18 @@
     color: @text-color;
     margin: 0;
     padding: 0;
+  }
+}
+
+@media (min-width: @mobile-width) {
+  .advantages__small::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: 280px;
+    height: 1px;
+    background: #d6d6d6;
+    bottom: -20px;
   }
 }
 
