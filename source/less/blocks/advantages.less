@@ -46,7 +46,7 @@
     position: relative;
     .advantages__features();
     bottom: 10px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0 5px 0;
   }
 
   &__features {
@@ -72,24 +72,16 @@
     padding: 0;
   }
 
-  &___small {
-    display: block;
-    text-align: center;
-    margin: -10px 26px 0 26px;
-    box-sizing: border-box;
-    margin-bottom: 24px;
-  }
-
-  &___small--theyard {
+  &__theyard {
     min-width: 268px;
     height: 117px;
   }
 
-  &__road {
-    width: 237px;
+
+  &__theway {
+    min-width: 237px;
     height: 118px;
-    text-align: center;
-    margin: 50px 41px 50px 42px;
+    margin: 0 41px 50px 42px;
   }
 
   &__tourists {
@@ -97,6 +89,14 @@
     height: 118px;
     text-align: center;
     margin: 50px 22px 24px 22px;
+  }
+
+
+  &__road {
+    width: 237px;
+    height: 118px;
+    text-align: center;
+    margin: 50px 41px 50px 42px;
   }
 
   &__originality {
@@ -112,8 +112,9 @@
   }
 }
 
-@media (min-width: @mobile-width) {
-  .advantages__small::after {
+
+@media (max-width: @mobile-width) {
+  .advantages__theyard--small::after {
     display: block;
     position: relative;
     content: "";
