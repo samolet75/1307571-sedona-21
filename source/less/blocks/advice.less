@@ -57,10 +57,44 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    width: 682px;
-    height: 113px;
+    min-width: 768px;
+    height: 329px;
     margin: 0 auto;
     margin-top: 158px;
+
+    .advice__house {
+      min-width: 185px;
+      height: 112px;
+      margin: 0 73px 0 36px;
+
+      .advice__description {
+        width: 100%;
+      }
+    }
+
+    .advice__memory {
+      min-width: 193px;
+      height: 92px;
+      order: 3;
+      margin: 0 31px 0 0;
+
+      .advice__description {
+        width: 100%;
+      }
+    }
+
+    .advice__feed {
+      display: inline-block;
+      min-width: 180px;
+      height: 113px;
+      margin: 0 70px 0 0;
+      padding-right: 17px;
+      box-sizing: border-box;
+
+      .advice__description {
+        width: 100%;
+      }
+    }
   }
 }
 

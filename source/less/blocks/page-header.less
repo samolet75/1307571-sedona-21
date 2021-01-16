@@ -3,7 +3,19 @@
   flex-direction: column;
   position: relative;
 
-  &__logo {
+  &__logo img {
+    display: inline-block;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(231, 229, 229, 1) 0%, rgba(231, 229, 229, 1) 23%, rgba(255, 255, 255, 1) 23%, rgba(255, 255, 255, 1) 100%);
+    min-width: 102px;
+    height: 84px;
+    bottom: -20px;
+    left: 35%;
+  }
+}
+
+@media (max-width: @mobile-width) {
+  .page-header__logo {
     position: relative;
     display: inline-block;
     min-width: 320px;
@@ -14,16 +26,6 @@
     box-sizing: border-box;
     margin-bottom: 35px;
     bottom: -5px;
-  }
-
-  &__logo img {
-    display: inline-block;
-    position: absolute;
-    background-image: linear-gradient(to top, rgba(231, 229, 229, 1) 0%, rgba(231, 229, 229, 1) 23%, rgba(255, 255, 255, 1) 23%, rgba(255, 255, 255, 1) 100%);
-    min-width: 102px;
-    height: 84px;
-    bottom: -20px;
-    left: 35%;
   }
 }
 
