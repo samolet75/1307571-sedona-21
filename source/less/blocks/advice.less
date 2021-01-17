@@ -2,13 +2,20 @@
   display: flex;
   flex-direction: row;
   min-width: 320px;
-  height: 416px;
+  height: 418px;
   margin-bottom: 0;
 
   &__list {
     list-style: none;
+    min-width: 320px;
     padding-left: 0;
     margin: 0;
+  }
+
+  &__house {
+    min-width: 240px;
+    height: 105px;
+
   }
 
   &__title {
@@ -19,24 +26,17 @@
 
 
   &__description {
+    display: inline;
     .advantages__features();
     margin: 0;
-    width: 220px;
+    width: 229px;
   }
 
   &__live {
     width: 240px;
     height: 105px;
-    margin: 30px 11px 26px 69px;
+    margin: 35px 11px 26px 69px;
     text-align: left;
-  }
-
-  &__live--house {
-    margin-top: 35px;
-  }
-
-  &__feed--meal {
-    margin-top: -25px;
   }
 
   &__memory {
@@ -48,7 +48,7 @@
   &__feed {
     width: 210px;
     height: 105px;
-    margin: 26px 40px 35px 70px;
+    margin: 25px 40px 35px 70px;
   }
 }
 

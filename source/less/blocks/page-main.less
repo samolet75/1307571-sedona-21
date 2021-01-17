@@ -24,6 +24,25 @@
   }
 }
 
+@media (max-width: @mobile-width) {
+  .invitation__square {
+    min-width: 320px;
+    height: 20px;
+    background-color: @bg-color;
+  }
+
+  .invitation__square::after {
+    display: block;
+    position: relative;
+    content: "";
+    border-top: 18px solid @bg-color;
+    border-left: 155px solid transparent;
+    border-right: 155px solid transparent;
+    top: 20px;
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .invitation__big {
     min-width: 550px;
