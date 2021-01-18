@@ -17,6 +17,21 @@
   }
 }
 
+@media (max-width: @mobile-width) {
+  .page-main__welcome::after {
+    display: block;
+    position: relative;
+    content: " ";
+    width: 0;
+    height: 0;
+    border-width: 30px 160px 1px;
+    border-style: solid;
+    border-color: transparent @bg-color @bg-color;
+    top: -38px;
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .page-body {
     width: 100%;
