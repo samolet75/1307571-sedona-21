@@ -6,6 +6,7 @@
   margin-bottom: 0;
 
   &__list {
+    position: relative;
     list-style: none;
     min-width: 320px;
     padding-left: 0;
@@ -14,16 +15,10 @@
 
   &__house {
     display: block;
-    min-width: 185px;
-    height: 112px;
+    min-width: 240px;
+    height: 105px;
     box-sizing: border-box;
-  }
-
-  &__house::before {
-    content: " ";
-    display: block;
-    position: relative;
-    background: url(".../housetablet.svg") no-repeat;
+    margin: 35px 9px 26px 71px;
   }
 
   &__title {
@@ -38,12 +33,6 @@
     width: 229px;
   }
 
-  &__live {
-    width: 240px;
-    height: 105px;
-    margin: 35px 11px 26px 69px;
-    text-align: left;
-  }
 
   &__memory {
     width: 229px;
@@ -56,6 +45,13 @@
     height: 105px;
     margin: 25px 40px 35px 70px;
   }
+}
+
+.hose {
+  display: inline-block;
+  position: relative;
+  left: 50px;
+
 }
 
 @media (min-width: @tablet-width) {
