@@ -15,6 +15,7 @@
 
   &__house {
     display: block;
+    position: relative;
     min-width: 240px;
     height: 105px;
     box-sizing: border-box;
@@ -35,15 +36,39 @@
 
 
   &__memory {
+    position: relative;
     width: 229px;
     height: 84px;
     margin: 26px 21px 0 70px;
   }
 
   &__feed {
+    position: relative;
     width: 210px;
     height: 105px;
     margin: 25px 40px 35px 70px;
+  }
+
+  &__hose {
+    position: absolute;
+    left: -50px;
+    top: -65px;
+  }
+
+  &__live {
+    text-align: left;
+  }
+
+  &__gift {
+    position: absolute;
+    top: -68px;
+    left: -50px;
+  }
+
+  &__burger {
+    position: absolute;
+    top: -65px;
+    left: -50px;
   }
 }
 
@@ -51,52 +76,68 @@
 @media (min-width: @tablet-width) {
   .advice {
     height: 329px;
-  }
 
-  .advice__list {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    min-width: 768px;
-    height: 329px;
-    margin: 0 auto;
-    margin-top: 158px;
-
-    .advice__house {
-      min-width: 185px;
-      height: 112px;
-      margin: 0 73px 0 36px;
+    &__list {
+      display: flex;
       text-align: center;
-
-      .advice__description {
-        width: 100%;
-      }
+      min-width: 768px;
+      height: 329px;
+      margin: 0 auto;
+      margin-top: 158px;
     }
 
-    .advice__memory {
+    &__house {
+      display: inline-block;
+      min-width: 185px;
+      height: 112px;
+      text-align: center;
+      margin: 0 73px 60px 36px;
+    }
+
+    &__hose {
+      position: absolute;
+      width: 75px;
+      height: 72px;
+      left: 55px;
+      top: -95px;
+    }
+
+    &__memory {
       min-width: 200px;
       height: 92px;
       order: 3;
       margin: 0 31px 0 0;
       text-align: center;
-
-      .advice__description {
-        width: 100%;
-      }
     }
 
-    .advice__feed {
+    &__gift {
+      position: absolute;
+      width: 64px;
+      height: 75px;
+      top: -95px;
+      left: 65px;
+    }
+
+    &__feed {
       display: inline-block;
       min-width: 180px;
       height: 113px;
       margin: 0 70px 0 0;
       padding-right: 17px;
-      box-sizing: border-box;
       text-align: center;
+      box-sizing: border-box;
+    }
 
-      .advice__description {
-        width: 100%;
-      }
+    &__burger {
+      position: absolute;
+      width: 76px;
+      height: 67.9px;
+      top: -90px;
+      left: 45px;
+    }
+
+    &__description {
+      width: 100%;
     }
   }
 }
@@ -107,11 +148,5 @@
     height: 113px;
     margin: 0 auto;
     margin-top: 158px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .advice__live {
-    margin: 0;
   }
 }
