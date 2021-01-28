@@ -33,24 +33,30 @@
   }
 
   &__link--vkontakte {
+    display: block;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
     margin: 0 0 45px 84px;
+    box-sizing: border-box;
   }
 
-  &__item--fb {
+  &__link--facebook {
+    display: block;
     background-color: #81b3d2;
     width: 47px;
     height: 48px;
     margin: 0 6px 45px 6px;
+    box-sizing: border-box;
   }
 
-  &__item--im {
+  &__link--instagram {
+    display: block;
     background-color: #81b3d2;
     width: 46px;
     height: 48px;
     margin: 0 85px 45px 0;
+    box-sizing: border-box;
   }
 
   &__link {
@@ -78,11 +84,15 @@
     top: 12px;
   }
 
-  &__item:hover {
+  &__link--vkontakte,
+  &__link--facebook,
+  &__link--instagram:hover {
     background-color: #669ec0;
   }
 
-  &__item:active {
+  &__link--vkontakte,
+  &__link--facebook,
+  &__link--instagram:active {
     background-color: #5496bd;
   }
 
