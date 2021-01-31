@@ -45,7 +45,7 @@
   width: 70px;
   height: 50px;
   cursor: pointer;
-  border: none;
+  outline: none;
 }
 
 
@@ -54,10 +54,13 @@
   right: 1px;
   left: auto;
   background-color: @bg-color;
+  outline: none;
+  border: none;
 
   &:hover,
   &:active {
     background-color: @bg-color;
+    outline: none;
   }
 
 
@@ -81,6 +84,7 @@
 @media (max-width: @mobile-width) {
   .main-nav--closed .main-nav__list {
     display: none;
+    outline: none;
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -88,6 +92,9 @@
     right: 0;
     left: auto;
     background-color: #81b3d2;
+    outline: none;
+    border: none;
+
 
     &::before,
     &::after {
@@ -222,6 +229,7 @@
 
     &__toggle {
       display: none;
+      border: none;
     }
 
 
