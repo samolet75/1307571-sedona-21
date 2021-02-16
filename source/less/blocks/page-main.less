@@ -24,6 +24,11 @@
   }
 }
 
+.page-main__welcome {
+  width: 320px;
+  height: 389px;
+}
+
 @media (max-width: @mobile-width) {
   .invitation__square {
     min-width: 320px;
@@ -39,6 +44,23 @@
     border-left: 155px solid transparent;
     border-right: 155px solid transparent;
     top: 20px;
+  }
+}
+
+
+@media (min-width: @mobile-width) {
+  @media (min-resolution: 2dppx) {
+    .page-main__welcome img {
+      display: none;
+    }
+
+
+    .page-main__welcome {
+      background-image: url("../img/mbsedona2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 320px 100%;
+
+    }
   }
 }
 
@@ -65,11 +87,6 @@
     &__grand {
       width: 100%;
       height: 100%;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("img/mbsedona2x.jpg");
-        background-size: 320px auto;
-      }
     }
   }
 }
