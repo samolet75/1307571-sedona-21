@@ -80,6 +80,25 @@
   }
 }
 
+.advantages__mg {
+  min-width: 320px;
+  height: 305px;
+}
+
+@media (min-width: @mobile-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__mg img {
+      display: none;
+    }
+
+    .advantages__mg {
+      background-image: url("../img/mbcity@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 320px 100%;
+    }
+  }
+}
+
 
 @media (max-width: @mobile-width) {
   .advantages__small:not(:last-child)::after {
