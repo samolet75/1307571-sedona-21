@@ -99,6 +99,25 @@
   }
 }
 
+.advantages__br {
+  min-width: 320px;
+  height: 305px;
+}
+
+@media (min-width: @mobile-width) {
+  @media (min-resolution: 2dppx) {
+    .advantages__br img {
+      display: none;
+    }
+
+    .advantages__br {
+      background-image: url("../img/mbbridge@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 320px 100%;
+    }
+  }
+}
+
 
 @media (max-width: @mobile-width) {
   .advantages__small:not(:last-child)::after {
