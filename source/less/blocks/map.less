@@ -4,6 +4,25 @@
   margin: 0 1px 31px 1px;
 }
 
+.mp {
+  width: 320px;
+  height: 350px;
+}
+
+@media (min-width: @mobile-width) {
+  @media (min-resolution: 2dppx) {
+    .mp img {
+      display: none;
+    }
+
+    .mp {
+      background-image: url("../img/mapmobile@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 320px 100%;
+    }
+  }
+}
+
 @media (min-width: @tablet-width) {
   .map {
     width: 100%;

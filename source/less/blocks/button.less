@@ -1,23 +1,30 @@
-.button {
-  display: block;
+.button__press {
+  display: inline-block;
   width: 280px;
   height: 58px;
   margin: 4px 19px 30px 21px;
   background-color: #81b3d2;
-
-  &__press {
-    display: inline-block;
-    font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    text-decoration: none;
-    color: #ffffff;
-    text-transform: uppercase;
-    padding: 16px 41px 16px 23px;
-  }
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  padding: 16px 41px 16px 23px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  box-sizing: border-box;
 }
+
+
+.button__press:hover {
+  background-color: #5496bd;
+}
+
+.button__press:focus {
+  color: rgba(250, 250, 250, 0.3);
+}
+
 
 @media (min-width: @tablet-width) {
   .button {
