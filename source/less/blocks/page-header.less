@@ -182,7 +182,7 @@
       width: 102px;
       height: 56px;
       margin: 0;
-      right: 44%;
+      right: 43.1%;
       top: 0%;
       z-index: 3;
     }
@@ -241,35 +241,46 @@
       margin: 0;
       padding: 0;
       background-color: @bg-color;
+      list-style: none;
+    }
+
+    &__list :nth-child(1) {
+      position: relative;
+      right: -25px;
+      top: 7px;
     }
 
     &__list :nth-child(3) {
-      margin-right: -100px;
+      position: relative;
+      right: -35px;
+      top: 7px;
     }
 
     &__list :nth-child(2) {
-      margin-left: -90px;
+      position: relative;
+      right: 37px;
+      top: 7px;
     }
 
     &__list :nth-child(4) {
-      margin-right: 20px;
+      position: relative;
+      right: 52px;
+      top: 7px;
     }
   }
 
 
   .site-list {
-    &__item {
+    &__link {
       font-family: "PT Sans Narrow", "Arial", sans-serif;
       font-weight: bold;
-      font-size: 18px;
-      line-height: 40px;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 26px;
       min-width: 153px;
       height: 56px;
       text-align: center;
       list-style: none;
-    }
-
-    &__link {
       text-decoration: none;
       color: black;
       margin: 0;

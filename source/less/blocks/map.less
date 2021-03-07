@@ -24,9 +24,35 @@
 }
 
 @media (min-width: @tablet-width) {
-  .map {
-    width: 100%;
+  .mp img {
+    display: none;
+  }
+
+  .mp {
+    min-width: 768px;
     height: 350px;
+    background-image: url("../img/maptablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 768px 350px;
+  }
+
+  @media (min-width: @mobile-width) {
+    @media (min-resolution: 2dppx) {
+      .advantages__mg img {
+        display: none;
+      }
+
+      .advantages__mg {
+        background-image: url("../img/maptablet@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: 768px 350px;
+      }
+    }
+
+    .map {
+      width: 768px;
+      height: 350px;
+    }
   }
 }
 
