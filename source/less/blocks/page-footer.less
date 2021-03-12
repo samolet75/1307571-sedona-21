@@ -144,6 +144,7 @@
 
 @media (min-width: @desktop-width) {
   .page-footer {
+    position: inherit;
     margin: 0;
     padding: 0;
     width: 1200px;
@@ -152,7 +153,20 @@
 
 @media (min-width: @tablet-width) {
   .social__title {
-    margin: 0;
+    position: absolute;
+    bottom: -1960px;
+    left: -30px;
+  }
+
+  .social__list {
+    position: absolute;
+    top: 2583px;
+  }
+
+  .development__link {
+    position: absolute;
+    left: 560px;
+    top: 2593px;
   }
 }
 
