@@ -136,6 +136,45 @@
     line-height: 26px;
     margin-top: 30px;
   }
+
+  .page-main {
+    background-color: @bg-color;
+    min-width: 768px;
+
+    &__welcome img {
+      display: none;
+    }
+
+    &__welcome {
+      height: 518px;
+      background-image: url("../img/dssedona.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      margin-bottom: 43.5px;
+    }
+
+    &__grand {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media (min-resolution: 2dppx) {
+    .page-main__welcome img {
+      display: none;
+    }
+
+    .page-main__welcome {
+      background-image: url("../img/dssedona@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+
+    .page-main__grand {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
