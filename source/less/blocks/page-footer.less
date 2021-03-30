@@ -1,7 +1,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  min-width: 320px;
   height: 233px;
   margin: 0;
   padding: 0;
@@ -13,7 +13,8 @@
 
 .social {
   &__title {
-    width: 166px;
+    display: block;
+    min-width: 166px;
     height: 26px;
     text-decoration: none;
     color: black;
@@ -29,7 +30,7 @@
     list-style: none;
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
   }
 
   &__link--vkontakte {
