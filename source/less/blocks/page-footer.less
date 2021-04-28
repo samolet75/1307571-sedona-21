@@ -136,10 +136,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 0;
     padding: 0;
     width: 768px;
-    align-items: center;
+    height: 120px;
   }
 }
 
@@ -154,20 +155,17 @@
 
 @media (min-width: @tablet-width) {
   .social__title {
-    position: absolute;
-    bottom: -1960px;
-    left: -30px;
+    margin: 0;
   }
 
   .social__list {
-    position: absolute;
-    top: 2583px;
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
   }
 
   .development__link {
-    position: absolute;
-    left: 560px;
-    top: 2593px;
+    margin: 0;
   }
 }
 
