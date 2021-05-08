@@ -156,6 +156,9 @@
 
 @media (min-width: @desktop-width) {
   .advice__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     min-width: 1200px;
     height: 113px;
     margin: 0 auto;
@@ -166,7 +169,7 @@
     width: 23.5%;
     height: 92px;
     text-align: center;
-    margin: 0 104px 80px 58px;
+    margin: 0;
   }
 
   .advice__hose {
@@ -174,17 +177,13 @@
     width: 75px;
     height: 72px;
     left: 105px;
-    top: -95px;
   }
 
   .advice__feed {
-    display: inline-block;
     min-width: 313px;
     height: 92px;
-    margin: 0 121px 81px 0;
-    padding-right: 17px;
-    text-align: center;
-    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
   }
 
   .advice__burger {
@@ -192,17 +191,14 @@
     width: 76px;
     height: 67.9px;
     top: -90px;
-    left: 110px;
+    left: 118px;
   }
 
   .advice__memory {
-    display: inline-block;
     min-width: 244px;
     height: 92px;
     order: 3;
-    margin: 0 31px 0 0;
-    text-align: center;
-    box-sizing: border-box;
+    margin: 0;
   }
 
   .advice__memory .advice__description {
@@ -223,10 +219,12 @@
   .advice__house .advice__description {
     width: 256px;
     height: 29px;
+    margin: 0 auto;
   }
 
   .advice__feed .advice__description {
-    width: 282px;
+    width: 280px;
     height: 35px;
+    margin: 0 auto;
   }
 }
