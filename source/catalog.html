@@ -82,8 +82,12 @@
       </header>
           <ul class="gallery__list">
             <li class="gallery__item gallery__item--long">
-              <img class="gallery__image gallery__image--way" src="img/road.jpg" width="280" height="280"
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/dorogadesktop.jpg 1x, img/dorogadesktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/dorogatablet.jpg 1x, img/dorogatablet@2x.jpg 2x" >
+                <img class="gallery__image gallery__image--way" src="img/dorogamobile.jpg"  srcset ="img/dorogamobile@2x.jpg 2x" width="280" height="280"
                 alt="фотография дороги на фоне заката">
+               </picture>
                 <div class="bathrobe">
               <h3 class="gallery__title">
                 Неродные просторы
@@ -97,7 +101,11 @@
               </div>
             </li>
             <li class="gallery__item gallery__item--flowers">
-              <img class="gallery__image" src="img/cactus.jpg" width="280" height="280" alt="фотография кактуса">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/cactusdesktop.jpg 1x, img/cactusdesktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/cactustablet.jpg 1x, img/cactustablet@2x.jpg 2x" >
+                <img class="gallery__image" src="img/cactusmobile.jpg" srcset ="img/cactusmobile.jpg@2x.jpg 2x" width="280" height="280" alt="фотография кактуса">
+               </picture>
                 <div class="bathrobe">
               <h3 class="gallery__title">
                 Местная ростительность
@@ -153,7 +161,7 @@
         <div class="video__film">
           <img class="video__video" src="img/Layer.jpg" width="320" height="427" alt="видео седоны">
           <div>
-            
+
           </div>
           </div>
         </div>
