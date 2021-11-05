@@ -26,18 +26,21 @@
   }
 
   &__square {
-    position: absolute;
     width: 280px;
     height: 45px;
     background-color: rgba(0, 0, 0, 0.6);
-    bottom: 100px;
-    margin: 0 20px 0 20px;
+
+    margin: -20px 20px 0 20px;
   }
 
-  &__stick {
+  &__square::before {
+    position: relative;
+    content: "";
+    display: inline-block;
     width: 235px;
     height: 3px;
     background-color: rgba(255, 255, 255, 1);
+    margin: 22px 23px 20px 22px;
   }
 
   &__scale {
@@ -46,7 +49,9 @@
     height: 13px;
     background-color: @bg-color;
     border-radius: 50%;
-    
+    margin: 0;
+    padding: 0;
+    z-index: 3;
   }
 }
 
