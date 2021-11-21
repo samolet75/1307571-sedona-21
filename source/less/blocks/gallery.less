@@ -24,6 +24,7 @@
     line-height: 26px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    margin-top: 0;
   }
 
   &__foto {
@@ -61,16 +62,20 @@
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bold;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 20px;
     text-transform: uppercase;
     text-align: left;
+    margin-top: 13px;
+    margin-bottom: 10px;
   }
 
   &__author {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 10px;
     text-align: left;
+    margin-top: 0;
+    margin-bottom: 16px;
   }
 
   &__prise {
@@ -78,8 +83,19 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    margin: 13px 209px 15px 20px;
+    margin: 0 209px 15px 20px;
   }
+
+  &__bathrobe {
+    width: 146px;
+    height: 73px;
+  }
+
+  &__bathrobe:nth-child(2){
+    width: 180px;
+    height: 73px;
+  }
+
 }
 
 @media (min-width: @tablet-width) {
@@ -177,7 +193,7 @@
     text-align: right;
   }
 
-  .bathrobe {
+  .gallery__bathrobe {
     display: grid;
     background-color: #eaeaea;
     height: 80px;
@@ -283,7 +299,7 @@
     text-align: right;
   }
 
-  .bathrobe {
+  .gallery__bathrobe {
     display: grid;
     background-color: #eaeaea;
     height: 80px;
