@@ -79,11 +79,15 @@
   }
 
   &__prise {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    height: 20px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    margin: 0 209px 15px 20px;
+    margin: 0 209px 15px 0;
   }
 
   &__bathrobe {
@@ -91,11 +95,10 @@
     height: 73px;
   }
 
-  &__bathrobe:nth-child(2){
+  &__bathrobe:nth-child(2) {
     width: 180px;
     height: 73px;
   }
-
 }
 
 @media (min-width: @tablet-width) {
