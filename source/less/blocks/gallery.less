@@ -94,13 +94,13 @@
   }
 
   &__bathrobe {
-    width: 146px;
+    width: 100%;
     height: 73px;
   }
 
   &__bathrobe:nth-child(2) {
-    width: 180px;
-    height: 73px;
+    width: 100%;
+    height: 50px;
   }
 }
 
@@ -185,8 +185,10 @@
   }
 
   .gallery__title {
+    display: inline-block;
     margin: 0;
     order: 1;
+    width: 100%;
   }
 
   .gallery__author {
@@ -197,9 +199,7 @@
   .gallery__prise {
     margin: 0;
     order: 2;
-    text-align: right;
-
-
+    justify-self: end;
   }
 
   .gallery__bathrobe {
@@ -207,8 +207,7 @@
     background-color: #eaeaea;
     height: 80px;
     margin-top: -6px;
-    padding-left: 20px;
-    grid-template-columns: 648px;
+    grid-template-columns: 100%;
   }
 }
 
