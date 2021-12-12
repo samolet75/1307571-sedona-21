@@ -37,7 +37,7 @@
   content: "";
   width: 235px;
   height: 3px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.2);
   left: 22px;
   bottom: 20px;
 }
@@ -118,17 +118,6 @@
       margin-top: 58px;
     }
 
-    &__video ::before {
-      content: "";
-      width: 648px;
-      height: 93px;
-      position: relative;
-      z-index: 10;
-      background-image: url("../img/rewind.svg");
-      background-repeat: no-repeat;
-      background-color: black;
-    }
-
     &__film {
       width: 648px;
       height: 500px;
@@ -149,7 +138,7 @@
       content: "";
       width: 389px;
       height: 3px;
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba(255, 255, 255, 0.2);
       left: 93px;
       bottom: 45px;
     }
@@ -174,9 +163,33 @@
     }
 
     .toggle__letgo {
-      background-color: 0 0;
-      fill: rgb(208, 226, 43);
-      opacity: 1;
+      fill: #ffffff;
+      margin: 35px 0 38px 35px;
+    }
+
+    .replay {
+      background-color: transparent;
+      margin: 0;
+    }
+
+    .toggle__word {
+      fill: #ffffff;
+      margin-left: 470px;
+    }
+
+    .subtitle {
+      margin: 0;
+      background-color: transparent;
+    }
+
+    .toggle__rectangle {
+      fill: #ffffff;
+      margin-left: 31px;
+    }
+
+    .snap {
+      margin: 0;
+      background-color: transparent;
     }
   }
 }
