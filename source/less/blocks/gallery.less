@@ -264,7 +264,7 @@
 
     &__item {
       width: 400px;
-      height: 347px;
+      height: 267px;
       padding: 0;
       border: none;
       margin: none;
@@ -272,7 +272,7 @@
 
     &__item--long {
       width: 1200px;
-      height: 480px;
+      height: 400px;
       padding: 0;
     }
 
@@ -330,14 +330,15 @@
       text-align: right;
       color: #ffffff;
       box-sizing: border-box;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     &__bathrobe {
+      position: relative;
+      background-color: transparent;
       display: grid;
-      background-color: #eaeaea;
-      height: 80px;
-      margin-top: -70px;
+      height: 50px;
+      margin-top: -75px;
       padding: 0 20px;
     }
 
@@ -348,6 +349,10 @@
       margin-right: 9px;
       opacity: 1;
     }
+  }
+
+  ul li:nth-of-type(1) .gallery__bathrobe::before {
+
   }
 
   .video__header {
