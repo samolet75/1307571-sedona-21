@@ -258,8 +258,10 @@
       width: 1200px;
       margin-left: 20px;
       grid-template-columns: 400px 400px 400px;
-      grid-template-rows: 480px 347px;
+      grid-template-rows: 400px 267px;
       border: none;
+      row-gap: 0;
+      column-gap: 0;
     }
 
     &__item {
@@ -313,31 +315,34 @@
       margin: 0;
       order: 1;
       color: #ffffff;
+      margin-left: 20px;
+      margin-top: 10px;
     }
 
     &__author {
       margin: 0;
       order: 3;
       color: #ffffff;
+      margin-left: 20px;
+      margin-bottom: 30px;
+      margin-top: -10px;
     }
 
     &__prise {
       width: 85px;
       height: 24px;
       margin: 0;
-      order: 2;
       text-align: right;
       color: #ffffff;
       box-sizing: border-box;
-
     }
 
     &__bathrobe {
       background-color: transparent;
       display: grid;
       height: 80px;
-      margin-top: -90px;
       padding: 0;
+      margin-top: -87px;
     }
 
     &__up {
@@ -347,12 +352,18 @@
       margin-right: 9px;
       opacity: 1;
     }
+
+    .gallery__image--way {
+      position: relative;
+    }
   }
 
   ul li:nth-of-type(1) .gallery__bathrobe {
-    background: #000000;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
     opacity: 1;
   }
+
 
   .video__header {
     width: 445px;
