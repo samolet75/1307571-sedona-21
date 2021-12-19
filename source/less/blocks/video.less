@@ -196,9 +196,9 @@
 
 @media (min-width: @desktop-width) {
   .video {
-    position: relative;
     width: 800px;
     height: 883px;
+    margin: 0 auto;
 
     &__header {
       width: 445px;
@@ -216,13 +216,84 @@
     }
 
     &__presentation {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      margin: 0;
+      position: relative;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
     }
+
+    &__film {
+      width: 648px;
+      height: 500px;
+    }
+
+    &__square {
+      display: block;
+      position: absolute;
+      width: 648px;
+      height: 93px;
+      bottom: 2px;
+      margin: 0 auto;
+    }
+
+    &__square::before {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      width: 389px;
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+      left: 93px;
+      bottom: 45px;
+    }
+
+    &__scale {
+      display: inline-block;
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background-color: @bg-color;
+      border-radius: 50%;
+      top: 40px;
+      left: 204px;
+    }
+  }
+
+  .toggle {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 572px;
+    margin: -80px auto;
+  }
+
+  .toggle__letgo {
+    fill: #ffffff;
+    margin: 35px 0 38px 35px;
+  }
+
+  .replay {
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .toggle__word {
+    fill: #ffffff;
+    margin-left: 470px;
+  }
+
+  .subtitle {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .toggle__rectangle {
+    fill: #ffffff;
+    margin-left: 31px;
+  }
+
+  .snap {
+    margin: 0;
+    background-color: transparent;
   }
 }
