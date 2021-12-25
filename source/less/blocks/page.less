@@ -35,6 +35,11 @@
 
 
 @media (min-width: @tablet-width) {
+  .page {
+    min-width: 768px;
+    height: auto;
+  }
+
   .page-body {
     width: 100%;
     height: auto;
@@ -44,12 +49,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page {
+    min-width: 1200px;
+    height: auto;
+  }
+
   .page-body {
     min-width: 100%;
     height: auto;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .page-main {

@@ -29,6 +29,7 @@
   height: 45px;
   background-color: rgba(0, 0, 0, 0.6);
   bottom: 51px;
+  cursor: none;
 }
 
 .video__square::before {
@@ -61,15 +62,20 @@
   padding: 0;
   margin: 22px 133px 24px 25px;
   cursor: pointer;
+  font-size: 0;
+  fill: #5C6870;
 }
 
 .subtitle {
   display: inline-block;
   border: none;
   padding: 0;
+  width: 32px;
   height: 20px;
   margin: 23px 31px 23px 0;
   cursor: pointer;
+  font-size: 0;
+  fill: #5C6870;
 }
 
 .snap {
@@ -79,7 +85,34 @@
   height: 20px;
   margin: 23px 23px 23px 0;
   cursor: pointer;
+  font-size: 0;
+  fill: #5c6870;
 }
+
+.replay:hover {
+  fill: #333333;
+}
+
+.subtitle:hover {
+  fill: #333333;
+}
+
+.snap:hover {
+  fill: #333333;
+}
+
+.replay:active {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+.subtitle:active {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
+.snap:active {
+  fill: rgba(51, 51, 51, 0.3);
+}
+
 
 .toggle {
   display: flex;
@@ -159,11 +192,13 @@
   }
 
   .toggle {
-    position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 572px;
-    margin: -80px auto;
+    position: absolute;
+    align-items: center;
+    width: 648px;
+    height: 93px;
+    margin: -93px auto;
   }
 
 
@@ -175,16 +210,19 @@
   .replay {
     background-color: transparent;
     margin: 0;
+    fill: #ffffff;
   }
 
   .toggle__word {
     fill: #ffffff;
-    margin-left: 470px;
+    border: none;
   }
 
   .subtitle {
     margin: 0;
     background-color: transparent;
+    margin-left: 470px;
+    fill: #ffffff;
   }
 
   .toggle__rectangle {
@@ -194,8 +232,35 @@
 
   .snap {
     margin: 0;
+    margin-right: 37px;
     background-color: transparent;
+    fill: #ffffff;
   }
+
+  .replay:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .subtitle:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .snap:hover {
+    ffill: rgba(255, 255, 255, 0.6);
+  }
+
+  .replay:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .subtitle:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .snap:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -282,16 +347,18 @@
   .replay {
     background-color: transparent;
     margin: 0;
+    fill: #000000;
   }
 
   .toggle__word {
     fill: #ffffff;
-    margin-left: 595px;
+    border: none;
   }
 
   .subtitle {
     margin: 0;
     background-color: transparent;
+    margin-left: 595px;
   }
 
   .toggle__rectangle {
@@ -303,5 +370,30 @@
   .snap {
     margin: 0;
     background-color: transparent;
+    fill: #ffffff;
+  }
+
+  .replay:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .subtitle:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .snap:hover {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+
+  .replay:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .subtitle:active {
+    fill: rgba(255, 255, 255, 0.3);
+  }
+
+  .snap:active {
+    fill: rgba(255, 255, 255, 0.3);
   }
 }
