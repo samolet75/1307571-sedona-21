@@ -80,6 +80,7 @@
     line-height: 26px;
     color: #000000;
     margin-bottom: 20px;
+    border: none;
   }
 
   &__call {
@@ -105,6 +106,7 @@
     line-height: 26px;
     color: #000000;
     margin-bottom: 20px;
+    border: none;
   }
 
   &__middl {
@@ -131,6 +133,7 @@
     color: #000000;
     margin-bottom: 46px;
     text-transform: uppercase;
+    border: none;
   }
 
   //Контактная информация
@@ -176,6 +179,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
+    border: none;
   }
 
   &__electronic {
@@ -201,6 +205,7 @@
     font-size: 18px;
     line-height: 26px;
     margin-bottom: 28px;
+    border: none;
   }
 
   //Общие впечатления
@@ -256,28 +261,26 @@
   //Посещение достопримечательностей
 
   &__visit {
-    display: flex;
-    position: relative;
-    flex-direction: column;
     width: 320px;
     height: 408px;
     border-bottom: 1px solid #e5e5e5;
   }
 
+  &__plase {
+    position: inherit;
+    padding-left: 24px;
+  }
+
   &__bridge {
     width: 46px;
     height: 46px;
-    margin-bottom: 34px;
-    margin-left: 20px;
   }
 
   &__mountain {
-    position: relative;
-    width: 139px;
+    display: inline-block;
+    width: 140px;
     height: 26px;
-    margin-bottom: 54px;
-    top: -15px;
-    right: -25px;
+    margin: 0;
   }
   //Опишите свои эмоции
 
@@ -324,19 +327,21 @@
     padding: 18.5px 30px 13.5px 30px;
     text-align: center;
   }
-}
 
-.reviews__rocks {
-  display: inline-block;
-  width: 268px;
-  height: 52px;
-  text-align: center;
-  margin: 15px 25px 26px 26px;
-}
+  &__rocks {
+    display: inline-block;
+    width: 268px;
+    height: 52px;
+    text-align: center;
+    margin: 15px 26px 26px 26px;
+  }
 
-.places {
-  width: 215px;
-  height: 46px;
+  &__places {
+    display: inline-block;
+    width: 100%;
+    height: 46px;
+    vertical-align: center;
+  }
 }
 
 @media (min-width: @tablet-width) {
