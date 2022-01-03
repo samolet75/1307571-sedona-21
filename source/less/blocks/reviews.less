@@ -266,13 +266,15 @@
   //Общие впечатления
 
   &__impression {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 320px;
     height: 288px;
     border-bottom: 2px solid #e5e5e5;
     padding: 20px;
     margin: 0;
-    margin-bottom: 15px;
+    gap: 20px;
   }
 
   &__retelling {
@@ -291,29 +293,64 @@
     display: flex;
     width: 296px;
     height: 48px;
-    margin-bottom: 21px;
   }
 
   &__well {
+    visibility: hidden;
     display: inherit;
     width: 48px;
     height: 48px;
-    margin: 0 0 21px 4px;
-  }
-
-  &__well:nth-child(1) {
-    margin: 25px 0 0 4px;
+    margin: 0;
   }
 
   &__label {
+    position: relative;
     display: inline-block;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    margin: 37px 7px 43px 4px;
+    width: 210px;
+    height: 26px;
   }
+
+  &__label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    right: 209px;
+  }
+
+  &__label::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #333333;
+    right: 225px;
+    top: 15px;
+  }
+
+  &__label:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &__label:active::before {
+    background-color: #d5d5d5
+  }
+
+  &__label:active::after {
+    display: block;
+  }
+
+
   //Посещение достопримечательностей
 
   &__visit {
