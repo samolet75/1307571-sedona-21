@@ -290,14 +290,12 @@
   }
 
   &__pozitiv {
-    display: flex;
     width: 296px;
     height: 48px;
   }
 
   &__well {
-    visibility: hidden;
-    display: inherit;
+    display: none;
     width: 48px;
     height: 48px;
     margin: 0;
@@ -317,13 +315,22 @@
 
   &__label::before {
     content: "";
-    display: inline-block;
+    display: block;
     position: absolute;
     width: 48px;
     height: 48px;
     border-radius: 50%;
     background-color: #f2f2f2;
-    right: 209px;
+    right: 210px;
+  }
+
+
+  &__label:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &__label:active::before {
+    background-color: #d5d5d5;
   }
 
   &__label::after {
@@ -332,24 +339,15 @@
     position: absolute;
     width: 18px;
     height: 18px;
-    border-radius: 50%;
     background-color: #333333;
+    border-radius: 50%;
     right: 225px;
     top: 15px;
   }
 
-  &__label:hover::before {
-    background-color: #e5e5e5;
-  }
-
-  &__label:active::before {
-    background-color: #d5d5d5
-  }
-
-  &__label:active::after {
+  &__label--point {
     display: block;
   }
-
 
   //Посещение достопримечательностей
 
