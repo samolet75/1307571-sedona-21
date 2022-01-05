@@ -286,12 +286,13 @@
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
-    margin: 0;
+    margin: 0 auto;
   }
 
   &__pozitiv {
     width: 296px;
     height: 48px;
+    text-align: left;
   }
 
   &__well {
@@ -311,6 +312,8 @@
     line-height: 26px;
     width: 210px;
     height: 26px;
+    margin-top: 10px;
+    margin-left: 68px;
   }
 
   &__label::before {
@@ -321,7 +324,8 @@
     height: 48px;
     border-radius: 50%;
     background-color: #f2f2f2;
-    right: 210px;
+    right: 230px;
+    top: -10px;
   }
 
 
@@ -342,10 +346,11 @@
     background-color: #333333;
     border-radius: 50%;
     right: 225px;
-    top: 15px;
+    top: 5px;
+    right: 245px;
   }
 
-  &__impression  .reviews__label:nth-child(1)::after {
+  &__retelling + .reviews__pozitiv > label::after {
     display: block;
   }
 
