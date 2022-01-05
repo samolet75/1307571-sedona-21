@@ -318,7 +318,7 @@
 
   &__label::before {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -337,6 +337,10 @@
     background-color: #d5d5d5;
   }
 
+  &__retelling + .reviews__pozitiv > label::before {
+    display: block;
+  }
+
   &__label::after {
     content: "";
     display: none;
@@ -345,9 +349,12 @@
     height: 18px;
     background-color: #333333;
     border-radius: 50%;
-    right: 225px;
     top: 5px;
     right: 245px;
+  }
+
+  &__label:active::after {
+    opacity: 0.3;
   }
 
   &__retelling + .reviews__pozitiv > label::after {
