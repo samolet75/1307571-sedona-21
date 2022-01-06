@@ -380,17 +380,33 @@
     width: 46px;
     height: 46px;
     margin-left: 24px;
+    display: none;
   }
 
   &__mountain {
+    position: inherit;
     display: inline-block;
-    width: 140px;
-    height: 26px;
+    width: 215px;
+    height: 46px;
     margin: 0;
-    margin-left: 25px;
     text-align: left;
-    margin-top: 12px;
+    margin-left: 99px;
   }
+
+  &__mountain::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+  }
+
+  &__mountain::after {
+    position: absolute;
+    content: "\2714";
+    display: inline-block;
+  }
+
   //Опишите свои эмоции
 
   &__their {
