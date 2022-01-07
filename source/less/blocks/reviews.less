@@ -391,20 +391,27 @@
     margin: 0;
     text-align: left;
     margin-left: 99px;
+    padding-top: 10px;
   }
 
   &__mountain::before {
     position: absolute;
     content: "";
-    display: inline-block;
+    display: block;
     width: 46px;
     height: 46px;
+    background-color: black;
+    left: 24px;
+    
+    bottom: 10px;
+
   }
 
   &__mountain::after {
     position: absolute;
     content: "\2714";
     display: inline-block;
+    left: 20px;
   }
 
   //Опишите свои эмоции
@@ -463,7 +470,12 @@
     width: 268px;
     height: 52px;
     text-align: center;
-    margin: 15px 26px 26px 26px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    text-transform: uppercase;
   }
 
   &__places {
