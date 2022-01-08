@@ -384,7 +384,7 @@
   }
 
   &__mountain {
-    position: inherit;
+    position: absolute;
     display: inline-block;
     width: 215px;
     height: 46px;
@@ -392,6 +392,7 @@
     text-align: left;
     margin-left: 99px;
     padding-top: 10px;
+    box-sizing: border-box;
   }
 
   &__mountain::before {
@@ -400,18 +401,28 @@
     display: block;
     width: 46px;
     height: 46px;
-    background-color: black;
-    left: 24px;
-    
-    bottom: 10px;
-
+    background-color: #f2f2f2;
+    left: -75px;
+    top: 0;
   }
 
-  &__mountain::after {
+  &__mountain:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &__mountain:active::before {
+    background-color: #d5d5d5;
+  }
+
+  &__mountain:not(:last-child)::after {
     position: absolute;
     content: "\2714";
     display: inline-block;
-    left: 20px;
+    left: -59px;
+  }
+
+  &__mountain:active::after {
+    opacity: 0.3;
   }
 
   //Опишите свои эмоции
@@ -479,6 +490,7 @@
   }
 
   &__places {
+    position: inherit;
     display: flex;
     justify-content: flex-start;
     width: 100%;
