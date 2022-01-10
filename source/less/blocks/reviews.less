@@ -414,7 +414,7 @@
     background-color: #d5d5d5;
   }
 
-  &__plase > .reviews__places > label::after:not(.reviews__mountain) {
+  &__plase > .reviews__places:not(:nth-child(4)) .reviews__mountain::after {
     position: absolute;
     content: "\2714";
     display: inline-block;
@@ -423,6 +423,10 @@
 
   &__mountain:active::after {
     opacity: 0.3;
+  }
+
+  &__plase > .reviews__places:nth-child(4) {
+    display: none;
   }
 
   //Опишите свои эмоции
@@ -449,10 +453,11 @@
   &__emo {
     width: 279px;
     height: 160px;
-    background-color: #f2f2f2;
+    background: #f2f2f2;
+    color:#000000;
     margin: 0 auto;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 26px;
     padding: 0;
