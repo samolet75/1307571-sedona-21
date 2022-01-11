@@ -425,10 +425,6 @@
     opacity: 0.3;
   }
 
-  &__plase > .reviews__places:nth-child(4) {
-    display: none;
-  }
-
   //Опишите свои эмоции
 
   &__their {
@@ -454,7 +450,6 @@
     width: 279px;
     height: 160px;
     background: #f2f2f2;
-    color:#000000;
     margin: 0 auto;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-weight: 700;
@@ -463,6 +458,10 @@
     padding: 0;
     border: none;
     margin-bottom: 51px;
+  }
+
+  &__emo::placeholder {
+    color: @text-color;
   }
 
   &__button {
