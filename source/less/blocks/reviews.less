@@ -519,7 +519,233 @@
 
 @media (min-width: @tablet-width) {
   .reviews {
-    width: 768px;
+    min-width: 768px;
+
+
+    &__header {
+      width: 435px;
+      height: 119px;
+      margin: 0 auto;
+      margin-bottom: 67px;
+      padding: 0;
+    }
+
+    &__complain {
+      font-size: 30px;
+      line-height: 26px;
+    }
+
+    &__forma {
+      width: 648px;
+      margin-right: auto;
+      margin-left: auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      width: 324px;
+      height: 292px;
+      padding: 0;
+      margin: 0;
+      padding-left: 30px;
+      margin-right: px;
+      order: 0;
+      border-left: 1px solid black;
+      border-bottom: none;
+      box-sizing: border-box;
+    }
+
+    &__legend {
+      margin: 0;
+    }
+
+    &__impression {
+      width: 282px;
+      height: 292px;
+      padding: 0;
+      margin: 0;
+      margin-right: 30px;
+      order: -1;
+      border: none;
+    }
+
+    &__withus {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 648px;
+      height: 245px;
+      margin: 0 auto;
+      padding: 0;
+      border-bottom: none;
+      top: -30px;
+    }
+
+    &__talk {
+      width: 648px;
+      height: 45px;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+
+    &__talk::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: -65px;
+      top: -7px;
+    }
+
+    &__talk::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: 60px;
+      top: -7px;
+    }
+
+    &__mail {
+      width: 590px;
+      height: 58px;
+      margin: 0;
+      margin-left: 5px;
+    }
+
+    &__telephon {
+      width: 590px;
+      height: 58px;
+    }
+
+    &__visit {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 648px;
+      height: 300px;
+      margin: 0 auto;
+      text-align: center;
+      top: -50px;
+    }
+
+    &__rocks {
+      display: block;
+      width: 308px;
+      height: 53px;
+      margin: 0 auto;
+      padding: 0 25px;
+      box-sizing: border-box;
+    }
+
+    &__stone {
+      width: 308px;
+      height: 53px;
+      text-align: center;
+      margin-bottom: 58px;
+    }
+
+    &__places {
+      width: 324px;
+      height: 46px;
+    }
+
+    &__mountain--three {
+      display: inline-block;
+      width: 118.27px;
+      margin: 0;
+    }
+
+    &__mountain--four {
+      display: inline-block;
+      width: 128.59px;
+      margin: 0;
+    }
+
+    &__rocks::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: -260px;
+      bottom: -32px;
+    }
+
+    &__rocks::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: 260px;
+      top: -45px;
+    }
+
+    &__bridge {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__their {
+      width: 648px;
+      height: 420px;
+      margin: 0 auto;
+    }
+
+    &__describe::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: -70px;
+      bottom: 9px;
+    }
+
+    &__describe::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 123px;
+      height: 1px;
+      background-color: black;
+      left: 450px;
+      top: -35px;
+    }
+
+    &__describe {
+      position: relative;
+      width: 380px;
+      margin: 0 auto;
+      margin-bottom: 54px;
+      left: -70px;
+    }
+
+    &__emo {
+      width: 648px;
+      height: 200px;
+      margin: 0 auto;
+      margin-bottom: 58px;
+      text-overflow: ellipsis;
+    }
+
+    &__button {
+      width: 324px;
+      height: 58px;
+    }
   }
 }
 
@@ -527,73 +753,20 @@
   .reviews {
     width: 1200px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__header {
-    width: 500px;
-    height: 119px;
-    margin: 0 auto;
-    margin-bottom: 67px;
-    padding: 0;
-  }
-
-  .reviews__complain {
-    font-size: 30px;
-    line-height: 26px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__header {
+  &__header {
     width: 500px;
     height: 107px;
     margin-bottom: 57px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__forma {
-    width: 648px;
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__forma {
+  &__forma {
     width: 961px;
     margin-right: auto;
     margin-left: auto;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__group {
-    display: flex;
-    flex-direction: column;
-    width: 324px;
-    height: 292px;
-    padding: 0;
-    margin: 0;
-    padding-left: 30px;
-    margin-right: px;
-    order: 0;
-    border-left: 1px solid black;
-    border-bottom: none;
-    box-sizing: border-box;
-  }
-
-  .reviews__legend {
-    margin: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__group {
+  &__group {
     width: 470px;
     height: 292px;
     padding: 0;
@@ -603,22 +776,9 @@
     border-left: 1px solid black;
     padding-left: 120px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__impression {
-    width: 282px;
-    height: 292px;
-    padding: 0;
-    margin: 0;
-    margin-right: 30px;
-    order: -1;
-    border: none;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .reviews__impression {
+  &__impression {
     width: 350px;
     height: 292px;
     padding: 0;
@@ -627,24 +787,9 @@
     margin-right: 50px;
     order: -1;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__withus {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 648px;
-    height: 245px;
-    margin: 0 auto;
-    padding: 0;
-    border-bottom: none;
-    top: -30px;
-  }
-}
 
-@media (min-width: @desktop-width) {
-  .reviews__withus {
+  &__withus {
     display: inline-block;
     position: relative;
     width: 960px;
@@ -653,42 +798,9 @@
     border-bottom: none;
     top: -50px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__talk {
-    width: 648px;
-    height: 45px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 20px;
-  }
 
-  .reviews__talk::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: -65px;
-    top: -7px;
-  }
-
-  .reviews__talk::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: 60px;
-    top: -7px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__talk::before {
+  &__talk::before {
     content: "";
     display: inline-block;
     position: relative;
@@ -699,7 +811,7 @@
     top: -7px;
   }
 
-  .reviews__talk::after {
+  &__talk::after {
     content: "";
     display: inline-block;
     position: relative;
@@ -709,128 +821,33 @@
     left: 60px;
     top: -7px;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .reviews__talk {
+  &__talk {
     width: 960px;
     height: 60;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__mail {
-    width: 590px;
-    height: 58px;
-    margin: 0;
-    margin-left: 5px;
-  }
-
-  .reviews__telephon {
-    width: 590px;
-    height: 58px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__mail {
+  &__mail {
     width: 257px;
     height: 58px;
     margin: 0;
   }
 
-  .reviews__telephon {
+  &__telephon {
     width: 257px;
     height: 58px;
   }
 
-  .reviews__connect {
+  &__connect {
     margin: 0;
   }
 
-  .reviews__electronic {
+  &__electronic {
     margin: 0;
     margin-left: 50px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__visit {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
-    width: 648px;
-    height: 300px;
-    margin: 0 auto;
-    text-align: center;
-    top: -50px;
-  }
-
-  .reviews__rocks {
-    display: block;
-    width: 308px;
-    height: 53px;
-    margin: 0 auto;
-    padding: 0 25px;
-    box-sizing: border-box;
-  }
-
-  .reviews__stone {
-    width: 100%;
-    height: 80px;
-    text-align: center;
-    margin-bottom: 58px;
-  }
-
-  .reviews__places {
-    width: 324px;
-    height: 46px;
-  }
-
-  .reviews__mountain--three {
-    display: inline-block;
-    width: 118.27px;
-    margin: 0;
-  }
-
-  .reviews__mountain--four {
-    display: inline-block;
-    width: 128.59px;
-    margin: 0;
-  }
-
-  .reviews__rocks::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: -260px;
-    bottom: -32px;
-  }
-
-  .reviews__rocks::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: 260px;
-    top: -45px;
-  }
-
-  .reviews__bridge {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__visit {
+  &__visit {
     position: relative;
     width: 960px;
     height: 190px;
@@ -838,12 +855,12 @@
     top: -100px;
   }
 
-  .reviews__places {
+  &__places {
     width: 240px;
     height: 46px;
   }
 
-  .reviews__rocks::before {
+  &__rocks::before {
     content: "";
     display: inline-block;
     position: relative;
@@ -854,7 +871,7 @@
     bottom: -32px;
   }
 
-  .reviews__rocks::after {
+  &__rocks::after {
     content: "";
     display: inline-block;
     position: relative;
@@ -864,56 +881,9 @@
     left: 330px;
     top: -45px;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__their {
-    width: 648px;
-    height: 420px;
-    margin: 0 auto;
-  }
 
-  .reviews__describe::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: -70px;
-    bottom: 9px;
-  }
-
-  .reviews__describe::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 123px;
-    height: 1px;
-    background-color: black;
-    left: 450px;
-    top: -35px;
-  }
-
-  .reviews__describe {
-    position: relative;
-    width: 380px;
-    margin: 0 auto;
-    margin-bottom: 54px;
-    left: -70px;
-  }
-
-  .reviews__emo {
-    width: 648px;
-    height: 200px;
-    margin: 0 auto;
-    margin-bottom: 58px;
-    text-overflow: ellipsis;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__their {
+  &__their {
     position: relative;
     width: 960px;
     height: 450px;
@@ -921,7 +891,7 @@
     top: -10px;
   }
 
-  .reviews__describe::before {
+  &__describe::before {
     content: "";
     display: inline-block;
     position: relative;
@@ -932,7 +902,7 @@
     bottom: -20px;
   }
 
-  .reviews__describe::after {
+  &__describe::after {
     content: "";
     display: inline-block;
     position: relative;
@@ -943,14 +913,14 @@
     top: -30px;
   }
 
-  .reviews__describe {
+  &__describe {
     position: absolute;
     width: 280px;
     top: -100px;
     right: -100px;
   }
 
-  .reviews__emo {
+  &__emo {
     width: 960px;
     height: 190px;
     margin: 0 auto;
@@ -958,17 +928,8 @@
     margin-bottom: 58px;
     box-sizing: border-box;
   }
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__button {
-    width: 324px;
-    height: 58px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reviews__button {
+  &__button {
     width: 480px;
     height: 58px;
   }
