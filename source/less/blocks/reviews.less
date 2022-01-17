@@ -519,6 +519,7 @@
 @media (min-width: @tablet-width) {
   .reviews {
     min-width: 768px;
+    height: 1707px;
 
 
     &__header {
@@ -582,6 +583,7 @@
       padding: 0;
       border-bottom: none;
       top: -30px;
+      margin-top: -150px;
     }
 
     &__talk {
@@ -635,6 +637,8 @@
       height: 240px;
       margin: 0 auto;
       top: -50px;
+      border-bottom: none;
+      margin-top: -100px;
     }
 
     &__rocks {
@@ -718,6 +722,7 @@
       width: 648px;
       height: 420px;
       margin: 0 auto;
+      margin-top: -180px;
     }
 
     &__describe::before {
@@ -738,7 +743,7 @@
       width: 123px;
       height: 1px;
       background-color: black;
-      left: 450px;
+      left: 300px;
       top: -35px;
     }
 
@@ -758,9 +763,16 @@
       text-overflow: ellipsis;
     }
 
+    &__mood {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
     &__button {
       width: 324px;
       height: 58px;
+      margin: 0;
     }
   }
 }
