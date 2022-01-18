@@ -528,6 +528,7 @@
       margin: 0 auto;
       margin-bottom: 67px;
       padding: 0;
+      border: none;
     }
 
     &__complain {
@@ -547,16 +548,28 @@
     &__group {
       display: flex;
       flex-direction: column;
-      width: 324px;
+      width: 322px;
       height: 292px;
       padding: 0;
       margin: 0;
-      padding-left: 30px;
+      padding-left: 50px;
       margin-right: px;
       order: 0;
-      border-left: 1px solid black;
+      border-left: 1px solid #dbdbdb;
       border-bottom: none;
       box-sizing: border-box;
+    }
+
+    &__name {
+      width: 216px;
+    }
+
+    &__surname {
+      width: 178px;
+    }
+
+    &__middlename {
+      width: 180px;
     }
 
     &__legend {
@@ -568,7 +581,7 @@
       height: 292px;
       padding: 0;
       margin: 0;
-      margin-right: 30px;
+      margin-right: 42px;
       order: -1;
       border: none;
     }
@@ -600,7 +613,7 @@
       position: relative;
       width: 123px;
       height: 1px;
-      background-color: black;
+      background-color: #dbdbdb;
       left: -65px;
       top: -7px;
     }
@@ -611,7 +624,7 @@
       position: relative;
       width: 123px;
       height: 1px;
-      background-color: black;
+      background-color: #dbdbdb;
       left: 60px;
       top: -7px;
     }
@@ -725,34 +738,34 @@
       margin-top: -180px;
     }
 
+    &__describe {
+      display: inline-block;
+      position: relative;
+      width: 280px;
+      margin: 0 auto;
+      margin-bottom: 54px;
+    }
+
     &__describe::before {
       content: "";
       display: inline-block;
-      position: relative;
+      position: absolute;
       width: 123px;
       height: 1px;
       background-color: black;
-      left: -70px;
+      left: ;
       bottom: 9px;
     }
 
     &__describe::after {
       content: "";
       display: inline-block;
-      position: relative;
+      position: absolute;
       width: 123px;
       height: 1px;
       background-color: black;
-      left: 300px;
-      top: -35px;
-    }
-
-    &__describe {
-      position: relative;
-      width: 380px;
-      margin: 0 auto;
-      margin-bottom: 54px;
-      left: -70px;
+      left: ;
+      top: 7px;
     }
 
     &__emo {
