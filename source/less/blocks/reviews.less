@@ -523,7 +523,7 @@
 
 
     &__header {
-      width: 435px;
+      min-width: 435px;
       height: 119px;
       margin: 0 auto;
       margin-bottom: 67px;
@@ -537,7 +537,7 @@
     }
 
     &__forma {
-      width: 648px;
+      min-width: 648px;
       margin-right: auto;
       margin-left: auto;
       display: flex;
@@ -710,7 +710,7 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: black;
+      background-color: #dbdbdb;
       left: -75px;
       bottom: 220px;
     }
@@ -721,7 +721,7 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: black;
+      background-color: #dbdbdb;
       left: 400px;
       top: 20px;
     }
@@ -739,10 +739,10 @@
     }
 
     &__describe {
-      display: inline-block;
+      display: block;
       position: relative;
       width: 280px;
-      margin: 0 auto;
+      margin: auto;
       margin-bottom: 54px;
     }
 
@@ -752,9 +752,9 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: black;
-      left: ;
-      bottom: 9px;
+      background-color: #dbdbdb;
+      left: -175px;
+      bottom: 15px;
     }
 
     &__describe::after {
@@ -763,9 +763,9 @@
       position: absolute;
       width: 123px;
       height: 1px;
-      background-color: black;
-      left: ;
-      top: 7px;
+      background-color: #dbdbdb;
+      right: -155px;
+      top: 8px;
     }
 
     &__emo {
@@ -791,187 +791,190 @@
 }
 
 @media (min-width: @desktop-width) {
+
   .reviews {
-    width: 1200px;
-  }
-
-  &__header {
-    width: 500px;
-    height: 107px;
-    margin-bottom: 57px;
-  }
-
-  &__forma {
-    width: 961px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  &__group {
-    width: 470px;
-    height: 292px;
-    padding: 0;
-    margin: 0;
-    margin-right: px;
-    order: 0;
-    border-left: 1px solid black;
-    padding-left: 120px;
-  }
+    min-width: 1200px;
+    height: 1500px;
 
 
-  &__impression {
-    width: 350px;
-    height: 292px;
-    padding: 0;
-    margin: 0;
-    margin-left: 80px;
-    margin-right: 50px;
-    order: -1;
-  }
+    &__header {
+      width: 500px;
+      height: 107px;
+      margin-bottom: 57px;
+    }
+
+    &__forma {
+      min-width: 960px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__group {
+      width: 470px;
+      height: 292px;
+      padding: 0;
+      margin: 0;
+      margin-right: px;
+      order: 0;
+      border-left: 1px solid black;
+      padding-left: 120px;
+    }
 
 
-  &__withus {
-    display: inline-block;
-    position: relative;
-    width: 960px;
-    height: 195px;
-    margin: 0 auto;
-    border-bottom: none;
-    top: -50px;
-  }
+    &__impression {
+      width: 350px;
+      height: 292px;
+      padding: 0;
+      margin: 0;
+      margin-left: 80px;
+      margin-right: 50px;
+      order: -1;
+    }
 
 
-  &__talk::before {
+    &__withus {
+      display: inline-block;
+      position: relative;
+      width: 960px;
+      height: 195px;
+      margin: 0 auto;
+      border-bottom: none;
+      top: -50px;
+    }
+
+
+    &__talk::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 285px;
+      height: 1px;
+      background-color: black;
+      left: -65px;
+      top: -7px;
+    }
+
+    &__talk::after {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 285px;
+      height: 1px;
+      background-color: black;
+      left: 60px;
+      top: -7px;
+    }
+
+    &__talk {
+      width: 960px;
+      height: 60;
+    }
+
+    &__mail {
+      width: 257px;
+      height: 58px;
+      margin: 0;
+    }
+
+    &__telephon {
+      width: 257px;
+      height: 58px;
+    }
+
+    &__connect {
+      margin: 0;
+    }
+
+    &__electronic {
+      margin: 0;
+      margin-left: 50px;
+    }
+
+    &__visit {
+      position: relative;
+      width: 960px;
+      height: 190px;
+      margin: 0 auto;
+      top: -100px;
+    }
+
+    &__places {
+      width: 240px;
+      height: 46px;
+    }
+
+    &__rocks::before {
     content: "";
-    display: inline-block;
-    position: relative;
-    width: 285px;
-    height: 1px;
-    background-color: black;
-    left: -65px;
-    top: -7px;
-  }
+      display: inline-block;
+      position: relative;
+      width: 280px;
+      height: 1px;
+      background-color: black;
+      left: -355px;
+      bottom: -32px;
+    }
 
-  &__talk::after {
+    &__rocks::after {
     content: "";
-    display: inline-block;
-    position: relative;
-    width: 285px;
-    height: 1px;
-    background-color: black;
-    left: 60px;
-    top: -7px;
-  }
+      display: inline-block;
+      position: relative;
+      width: 280px;
+      height: 1px;
+      background-color: black;
+      left: 330px;
+      top: -45px;
+    }
 
-  &__talk {
-    width: 960px;
-    height: 60;
-  }
 
-  &__mail {
-    width: 257px;
-    height: 58px;
-    margin: 0;
-  }
+    &__their {
+      position: relative;
+      width: 960px;
+      height: 450px;
+      margin: 0 auto;
+      top: -10px;
+    }
 
-  &__telephon {
-    width: 257px;
-    height: 58px;
-  }
+    &__describe::before {
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 280px;
+      height: 1px;
+      background-color: black;
+      left: -350px;
+      bottom: -20px;
+    }
 
-  &__connect {
-    margin: 0;
-  }
-
-  &__electronic {
-    margin: 0;
-    margin-left: 50px;
-  }
-
-  &__visit {
-    position: relative;
-    width: 960px;
-    height: 190px;
-    margin: 0 auto;
-    top: -100px;
-  }
-
-  &__places {
-    width: 240px;
-    height: 46px;
-  }
-
-  &__rocks::before {
+    &__describe::after {
     content: "";
-    display: inline-block;
-    position: relative;
-    width: 280px;
-    height: 1px;
-    background-color: black;
-    left: -355px;
-    bottom: -32px;
-  }
+      display: inline-block;
+      position: relative;
+      width: 280px;
+      height: 1px;
+      background-color: black;
+      left: 330px;
+      top: -30px;
+    }
 
-  &__rocks::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 280px;
-    height: 1px;
-    background-color: black;
-    left: 330px;
-    top: -45px;
-  }
+    &__describe {
+      position: absolute;
+      width: 280px;
+      top: -100px;
+      right: -100px;
+    }
 
+    &__emo {
+      width: 960px;
+      height: 190px;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 58px;
+      box-sizing: border-box;
+    }
 
-  &__their {
-    position: relative;
-    width: 960px;
-    height: 450px;
-    margin: 0 auto;
-    top: -10px;
-  }
-
-  &__describe::before {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 280px;
-    height: 1px;
-    background-color: black;
-    left: -350px;
-    bottom: -20px;
-  }
-
-  &__describe::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 280px;
-    height: 1px;
-    background-color: black;
-    left: 330px;
-    top: -30px;
-  }
-
-  &__describe {
-    position: absolute;
-    width: 280px;
-    top: -100px;
-    right: -100px;
-  }
-
-  &__emo {
-    width: 960px;
-    height: 190px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 58px;
-    box-sizing: border-box;
-  }
-
-  &__button {
-    width: 480px;
-    height: 58px;
+    &__button {
+      width: 480px;
+      height: 58px;
+    }
   }
 }
