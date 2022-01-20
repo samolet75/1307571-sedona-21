@@ -318,7 +318,6 @@
 
   &__label::before {
     content: "";
-    display: none;
     position: absolute;
     width: 48px;
     height: 48px;
@@ -585,7 +584,7 @@
       margin-right: 42px;
       order: -1;
       border: none;
-      gap: 40px;
+      gap: 45px;
     }
 
     &__withus {
@@ -793,7 +792,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .reviews {
     min-width: 1200px;
     height: 1500px;
@@ -819,7 +817,11 @@
       margin-right: px;
       order: 0;
       border-left: 1px solid black;
-      padding-left: 120px;
+      padding-left: px;
+    }
+
+    &__subgroup {
+      width: 270px;
     }
 
 
@@ -906,7 +908,7 @@
     }
 
     &__rocks::before {
-    content: "";
+      content: "";
       display: inline-block;
       position: relative;
       width: 280px;
@@ -917,7 +919,7 @@
     }
 
     &__rocks::after {
-    content: "";
+      content: "";
       display: inline-block;
       position: relative;
       width: 280px;
@@ -948,7 +950,7 @@
     }
 
     &__describe::after {
-    content: "";
+      content: "";
       display: inline-block;
       position: relative;
       width: 280px;
