@@ -798,9 +798,19 @@
 
 
     &__header {
-      width: 500px;
+      width: 434px;
       height: 107px;
       margin-bottom: 57px;
+      padding-top: 114px;
+    }
+
+    &__complain {
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+
+    &__help {
+      margin: 0;
     }
 
     &__forma {
@@ -817,11 +827,12 @@
       margin-right: px;
       order: 0;
       border-left: 1px solid black;
-      padding-left: px;
+      padding-left: 63px;
     }
 
     &__subgroup {
       width: 270px;
+      margin-left: 15px;
     }
 
 
@@ -830,22 +841,54 @@
       height: 292px;
       padding: 0;
       margin: 0;
-      margin-left: 80px;
-      margin-right: 50px;
+      margin-left: 8px;
+      margin-right: 120px;
       order: -1;
+    }
+
+    &__retelling {
+      margin: 0;
+      margin-left: 55px;
     }
 
 
     &__withus {
       display: inline-block;
       position: relative;
-      width: 960px;
-      height: 195px;
+      width: 965px;
+      height: 58px;
       margin: 0 auto;
       border-bottom: none;
       top: -50px;
     }
 
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__set::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url("../img/phone.svg") no-repeat center #e6e6e6;
+      width: 58px;
+      height: 58px;
+      bottom: 0;
+
+    }
+
+    &__letter::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background: url("../img/mail.svg") no-repeat center #e6e6e6;
+      width: 58px;
+      height: 58px;
+      top: 1px;
+      
+    }
 
     &__talk::before {
       content: "";
