@@ -650,19 +650,14 @@
       width: 460px;
       height: 240px;
       margin: 0 auto;
-      top: -50px;
+      top: -100px;
       border-bottom: none;
       margin-top: -100px;
     }
 
     &__rocks {
       position: inherit;
-      text-align: center;
-      margin: 0;
-    }
-
-    &__stone {
-      display: inline;
+      display: inline-block;
       width: 308px;
       height: 53px;
       margin: 0 auto;
@@ -736,7 +731,7 @@
       width: 648px;
       height: 420px;
       margin: 0 auto;
-      margin-top: -180px;
+      margin-top: -300px;
     }
 
     &__describe {
@@ -853,13 +848,12 @@
 
 
     &__withus {
-      display: inline-block;
       position: relative;
-      width: 965px;
-      height: 58px;
+      width: 960px;
+      height: 154px;
       margin: 0 auto;
       border-bottom: none;
-      top: -50px;
+      top: -150px;
     }
 
     &__box {
@@ -876,7 +870,6 @@
       width: 58px;
       height: 58px;
       bottom: 0;
-
     }
 
     &__letter::after {
@@ -887,7 +880,6 @@
       width: 58px;
       height: 58px;
       top: 1px;
-      
     }
 
     &__talk::before {
@@ -897,7 +889,7 @@
       width: 285px;
       height: 1px;
       background-color: black;
-      left: -65px;
+      left: -75px;
       top: -7px;
     }
 
@@ -908,13 +900,20 @@
       width: 285px;
       height: 1px;
       background-color: black;
-      left: 60px;
+      left: 75px;
       top: -7px;
     }
 
     &__talk {
       width: 960px;
       height: 60;
+    }
+
+    &__plase {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      width: 960px;
     }
 
     &__mail {
@@ -942,12 +941,25 @@
       width: 960px;
       height: 190px;
       margin: 0 auto;
-      top: -100px;
+      top: -350px;
     }
 
     &__places {
-      width: 240px;
+      display: inline-block;
+      width: 140px;
       height: 46px;
+      margin-right: 0;
+      text-align: center;
+    }
+
+    &__plase > .reviews__places:not(:last-child) {
+      margin-right: 78px;
+    }
+
+
+    &__rocks {
+      width: 308px;
+      height: 53px;
     }
 
     &__rocks::before {
@@ -957,7 +969,7 @@
       width: 280px;
       height: 1px;
       background-color: black;
-      left: -355px;
+      left: -340px;
       bottom: -32px;
     }
 
@@ -968,17 +980,16 @@
       width: 280px;
       height: 1px;
       background-color: black;
-      left: 330px;
+      left: 335px;
       top: -45px;
     }
-
 
     &__their {
       position: relative;
       width: 960px;
-      height: 450px;
-      margin: 0 auto;
-      top: -10px;
+      height: 240px;
+      margin: 0;
+      bottom: 500px;
     }
 
     &__describe::before {
@@ -1004,17 +1015,14 @@
     }
 
     &__describe {
-      position: absolute;
       width: 280px;
-      top: -100px;
-      right: -100px;
+      
     }
 
     &__emo {
       width: 960px;
-      height: 190px;
+      height: 160px;
       margin: 0 auto;
-      margin-top: 10px;
       margin-bottom: 58px;
       box-sizing: border-box;
     }
