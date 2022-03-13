@@ -14,7 +14,8 @@
     "gulp-sourcemaps": "3.0.0",
     "postcss": "^8.4.8",
     "stylelint": "13.7.2",
-    "stylelint-config-htmlacademy": "0.1.4"
+    "stylelint-config-htmlacademy": "0.1.4",
+    "stylelint-config-standard-scss": "^3.0.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
