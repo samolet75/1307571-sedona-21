@@ -128,6 +128,7 @@ clean,
   gulp.parallel(
   styles,
   html,
+  scripts,
   copy,
   images,
   createWebp
@@ -142,8 +143,8 @@ exports.default = gulp.series(
     gulp.parallel(
     styles,
     html,
-    copy,
     scripts,
+    copy,
     createWebp
   ),
   gulp.series(
