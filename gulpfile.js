@@ -6,7 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
-const htmnmin = require("gulp-htmlmin");
+const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
@@ -37,7 +37,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-  .pipe(htmnmin({collapseWhitespace:true}))
+  .pipe(htmlmin({collapseWhitespace:true}))
   .pipe(gulp.dest("dist"))
 }
 
@@ -54,7 +54,7 @@ exports.scripts = scripts;
 
 //Copy
 
-const copy = () => {
+const copy = (done) => {
 return gulp.src([
   "source/fonts/*.{woff2,woff}",
   "source/*.ico",
@@ -65,7 +65,7 @@ return gulp.src([
 })
 
 .pipe(gulp.dest("dist"))
-
+done()
 }
 
 exports.copy = copy;
@@ -137,6 +137,7 @@ clean,
 
 exports.build = build;
 
+//Default
 
 exports.default = gulp.series(
   clean,
@@ -148,6 +149,7 @@ exports.default = gulp.series(
     createWebp
   ),
   gulp.series(
-  server, watcher
+  server,
+  watcher
   )
 )

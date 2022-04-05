@@ -14,5 +14,6 @@ navToggle.addEventListener('click', function() {
 });
 
 
-alert("hello")
+alert("hallo")
+
 
