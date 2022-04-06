@@ -119,29 +119,30 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, sync.reload));
 }
 
-//Build
+// Build
+
 const build = gulp.series(
-clean,
+  clean,
   gulp.parallel(
-  styles,
-  html,
-  scripts,
-  copy,
-  images,
-  createWebp
-  )
-)
+    styles,
+    html,
+    scripts,
+    copy,
+    images,
+    createWebp
+  ));
 
 exports.build = build;
 
-//Default
+// Default
 
 exports.default = gulp.series(
   clean,
-    gulp.parallel(
+  gulp.parallel(
     styles,
     html,
     scripts,
@@ -149,7 +150,7 @@ exports.default = gulp.series(
     createWebp
   ),
   gulp.series(
-  server,
-  watcher
+    server,
+    watcher
   )
-)
+);
