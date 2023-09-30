@@ -6,7 +6,7 @@
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="less/style.less">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body class="page-body">
   <svg style="display: none;">
@@ -271,21 +271,7 @@
       </a>
   </footer>
 </div>
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+<script src="js/script.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
